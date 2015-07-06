@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220BB0131B4AFBB000C41B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0121B4AFBB000C41B10 /* main.m */; };
+		220BB0161B4AFBB000C41B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0151B4AFBB000C41B10 /* AppDelegate.m */; };
+		220BB0191B4AFBB000C41B10 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0181B4AFBB000C41B10 /* GameScene.m */; };
+		220BB01B1B4AFBB000C41B10 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 220BB01A1B4AFBB000C41B10 /* GameScene.sks */; };
+		220BB01E1B4AFBB000C41B10 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB01D1B4AFBB000C41B10 /* GameViewController.m */; };
+		220BB0211B4AFBB000C41B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220BB01F1B4AFBB000C41B10 /* Main.storyboard */; };
+		220BB0231B4AFBB000C41B10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220BB0221B4AFBB000C41B10 /* Images.xcassets */; };
+		220BB0261B4AFBB000C41B10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220BB0241B4AFBB000C41B10 /* LaunchScreen.xib */; };
+		220BB0321B4AFBB000C41B10 /* Bubble_StruggleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0311B4AFBB000C41B10 /* Bubble_StruggleTests.m */; };
+		220BB03D1B4AFC0600C41B10 /* BubbleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB03C1B4AFC0600C41B10 /* BubbleNode.m */; };
+		220BB03F1B4AFCCF00C41B10 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 220BB03E1B4AFCCF00C41B10 /* Sprites.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220BB02C1B4AFBB000C41B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220BB0051B4AFBB000C41B10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220BB00C1B4AFBB000C41B10;
+			remoteInfo = "Bubble Struggle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220BB00D1B4AFBB000C41B10 /* Bubble Struggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bubble Struggle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		220BB0111B4AFBB000C41B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220BB0121B4AFBB000C41B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		220BB0141B4AFBB000C41B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		220BB0151B4AFBB000C41B10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		220BB0171B4AFBB000C41B10 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		220BB0181B4AFBB000C41B10 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		220BB01A1B4AFBB000C41B10 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		220BB01C1B4AFBB000C41B10 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		220BB01D1B4AFBB000C41B10 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		220BB0201B4AFBB000C41B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		220BB0221B4AFBB000C41B10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		220BB0251B4AFBB000C41B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		220BB02B1B4AFBB000C41B10 /* Bubble StruggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bubble StruggleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		220BB0301B4AFBB000C41B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220BB0311B4AFBB000C41B10 /* Bubble_StruggleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bubble_StruggleTests.m; sourceTree = "<group>"; };
+		220BB03B1B4AFC0600C41B10 /* BubbleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleNode.h; sourceTree = "<group>"; };
+		220BB03C1B4AFC0600C41B10 /* BubbleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleNode.m; sourceTree = "<group>"; };
+		220BB03E1B4AFCCF00C41B10 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220BB00A1B4AFBB000C41B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BB0281B4AFBB000C41B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220BB0041B4AFBB000C41B10 = {
+			isa = PBXGroup;
+			children = (
+				220BB00F1B4AFBB000C41B10 /* Bubble Struggle */,
+				220BB02E1B4AFBB000C41B10 /* Bubble StruggleTests */,
+				220BB00E1B4AFBB000C41B10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		220BB00E1B4AFBB000C41B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220BB00D1B4AFBB000C41B10 /* Bubble Struggle.app */,
+				220BB02B1B4AFBB000C41B10 /* Bubble StruggleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220BB00F1B4AFBB000C41B10 /* Bubble Struggle */ = {
+			isa = PBXGroup;
+			children = (
+				220BB0141B4AFBB000C41B10 /* AppDelegate.h */,
+				220BB0151B4AFBB000C41B10 /* AppDelegate.m */,
+				220BB0171B4AFBB000C41B10 /* GameScene.h */,
+				220BB0181B4AFBB000C41B10 /* GameScene.m */,
+				220BB03B1B4AFC0600C41B10 /* BubbleNode.h */,
+				220BB03C1B4AFC0600C41B10 /* BubbleNode.m */,
+				220BB01A1B4AFBB000C41B10 /* GameScene.sks */,
+				220BB01C1B4AFBB000C41B10 /* GameViewController.h */,
+				220BB01D1B4AFBB000C41B10 /* GameViewController.m */,
+				220BB01F1B4AFBB000C41B10 /* Main.storyboard */,
+				220BB0221B4AFBB000C41B10 /* Images.xcassets */,
+				220BB03E1B4AFCCF00C41B10 /* Sprites.atlas */,
+				220BB0241B4AFBB000C41B10 /* LaunchScreen.xib */,
+				220BB0101B4AFBB000C41B10 /* Supporting Files */,
+			);
+			path = "Bubble Struggle";
+			sourceTree = "<group>";
+		};
+		220BB0101B4AFBB000C41B10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				220BB0111B4AFBB000C41B10 /* Info.plist */,
+				220BB0121B4AFBB000C41B10 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		220BB02E1B4AFBB000C41B10 /* Bubble StruggleTests */ = {
+			isa = PBXGroup;
+			children = (
+				220BB0311B4AFBB000C41B10 /* Bubble_StruggleTests.m */,
+				220BB02F1B4AFBB000C41B10 /* Supporting Files */,
+			);
+			path = "Bubble StruggleTests";
+			sourceTree = "<group>";
+		};
+		220BB02F1B4AFBB000C41B10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				220BB0301B4AFBB000C41B10 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220BB00C1B4AFBB000C41B10 /* Bubble Struggle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220BB0351B4AFBB000C41B10 /* Build configuration list for PBXNativeTarget "Bubble Struggle" */;
+			buildPhases = (
+				220BB0091B4AFBB000C41B10 /* Sources */,
+				220BB00A1B4AFBB000C41B10 /* Frameworks */,
+				220BB00B1B4AFBB000C41B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bubble Struggle";
+			productName = "Bubble Struggle";
+			productReference = 220BB00D1B4AFBB000C41B10 /* Bubble Struggle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		220BB02A1B4AFBB000C41B10 /* Bubble StruggleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220BB0381B4AFBB000C41B10 /* Build configuration list for PBXNativeTarget "Bubble StruggleTests" */;
+			buildPhases = (
+				220BB0271B4AFBB000C41B10 /* Sources */,
+				220BB0281B4AFBB000C41B10 /* Frameworks */,
+				220BB0291B4AFBB000C41B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220BB02D1B4AFBB000C41B10 /* PBXTargetDependency */,
+			);
+			name = "Bubble StruggleTests";
+			productName = "Bubble StruggleTests";
+			productReference = 220BB02B1B4AFBB000C41B10 /* Bubble StruggleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220BB0051B4AFBB000C41B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "David Rynn";
+				TargetAttributes = {
+					220BB00C1B4AFBB000C41B10 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					220BB02A1B4AFBB000C41B10 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 220BB00C1B4AFBB000C41B10;
+					};
+				};
+			};
+			buildConfigurationList = 220BB0081B4AFBB000C41B10 /* Build configuration list for PBXProject "Bubble Struggle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220BB0041B4AFBB000C41B10;
+			productRefGroup = 220BB00E1B4AFBB000C41B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220BB00C1B4AFBB000C41B10 /* Bubble Struggle */,
+				220BB02A1B4AFBB000C41B10 /* Bubble StruggleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220BB00B1B4AFBB000C41B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BB0261B4AFBB000C41B10 /* LaunchScreen.xib in Resources */,
+				220BB0231B4AFBB000C41B10 /* Images.xcassets in Resources */,
+				220BB01B1B4AFBB000C41B10 /* GameScene.sks in Resources */,
+				220BB0211B4AFBB000C41B10 /* Main.storyboard in Resources */,
+				220BB03F1B4AFCCF00C41B10 /* Sprites.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BB0291B4AFBB000C41B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220BB0091B4AFBB000C41B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BB01E1B4AFBB000C41B10 /* GameViewController.m in Sources */,
+				220BB0161B4AFBB000C41B10 /* AppDelegate.m in Sources */,
+				220BB03D1B4AFC0600C41B10 /* BubbleNode.m in Sources */,
+				220BB0191B4AFBB000C41B10 /* GameScene.m in Sources */,
+				220BB0131B4AFBB000C41B10 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BB0271B4AFBB000C41B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BB0321B4AFBB000C41B10 /* Bubble_StruggleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220BB02D1B4AFBB000C41B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220BB00C1B4AFBB000C41B10 /* Bubble Struggle */;
+			targetProxy = 220BB02C1B4AFBB000C41B10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		220BB01F1B4AFBB000C41B10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220BB0201B4AFBB000C41B10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		220BB0241B4AFBB000C41B10 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220BB0251B4AFBB000C41B10 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		220BB0331B4AFBB000C41B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		220BB0341B4AFBB000C41B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220BB0361B4AFBB000C41B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bubble Struggle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		220BB0371B4AFBB000C41B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bubble Struggle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		220BB0391B4AFBB000C41B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bubble StruggleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bubble Struggle.app/Bubble Struggle";
+			};
+			name = Debug;
+		};
+		220BB03A1B4AFBB000C41B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bubble StruggleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bubble Struggle.app/Bubble Struggle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220BB0081B4AFBB000C41B10 /* Build configuration list for PBXProject "Bubble Struggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BB0331B4AFBB000C41B10 /* Debug */,
+				220BB0341B4AFBB000C41B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220BB0351B4AFBB000C41B10 /* Build configuration list for PBXNativeTarget "Bubble Struggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BB0361B4AFBB000C41B10 /* Debug */,
+				220BB0371B4AFBB000C41B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		220BB0381B4AFBB000C41B10 /* Build configuration list for PBXNativeTarget "Bubble StruggleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BB0391B4AFBB000C41B10 /* Debug */,
+				220BB03A1B4AFBB000C41B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 220BB0051B4AFBB000C41B10 /* Project object */;
+}
