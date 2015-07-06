@@ -9,5 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface BubbleNode : SKSpriteNode
-+(instancetype)bubbleAtPosition: (CGPoint) position;
+
+-(SKSpriteNode *)bubbleAtPosition: (CGPoint) position;
+
 @end

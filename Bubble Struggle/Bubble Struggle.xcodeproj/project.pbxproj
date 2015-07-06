@@ -438,6 +438,7 @@
 				220BB0371B4AFBB000C41B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		220BB0381B4AFBB000C41B10 /* Build configuration list for PBXNativeTarget "Bubble StruggleTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +447,7 @@
 				220BB03A1B4AFBB000C41B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
