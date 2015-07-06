@@ -21,10 +21,9 @@
     
     
     
-    BubbleNode *bubble = [BubbleNode bubbleAtPosition:centerScreen];
+    [self generateBubble];
     
     
-    [self addChild:bubble];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -46,6 +45,22 @@
         [self addChild:sprite];
     }
 }
+
+
+
+-(void)generateBubble{
+    BubbleNode *bubble = [[BubbleNode alloc]init];
+    //Generate bubble at a specificPosition
+    [self addChild:[bubble bubbleAtPosition:CGPointMake([self generateRandomFloatBetween:400 and:600], 300)]];
+}
+
+
+-(CGFloat)generateRandomFloatBetween:(NSInteger) firstNumber and:(NSInteger)secondNumber{
+    return (CGFloat)(firstNumber + arc4random_uniform((u_int32_t)secondNumber - (u_int32_t)firstNumber + 1));
+}
+
+
+
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
