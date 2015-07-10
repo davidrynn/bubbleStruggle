@@ -9,6 +9,11 @@
 #import "GameScene.h"
 #import "BubbleNode.h"
 
+
+#define ARC4RANDOM_MAX      0x100000000
+
+
+
 @implementation GameScene
 
 -(void)didMoveToView:(SKView *)view {
@@ -20,50 +25,51 @@
     [self addChild:background];
     
     
-    
-    [self generateBubble];
-    
-    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.xScale = 0.5;
-        sprite.yScale = 0.5;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
+    UITouch *touchedNode = [touches anyObject]; // Registers the touch
+    CGPoint touchPoint = [touchedNode locationInNode:self]; // (x, y) of where the touch was
+    SKNode *node = [self nodeAtPoint:touchPoint]; // Returns the node at touch
+
+    NSLog(@"X: %f",touchPoint.x);
+    NSLog(@"Y: %f",touchPoint.y);
+    if ([node.name isEqualToString:@"bubbleNode"]){
+            // do something with that node
+            [node removeFromParent];
+            NSLog(@"%@",node);
+        }
+
 }
 
+    
+-(void)update:(CFTimeInterval)currentTime {
+    
+    [self spawnBubbleWithInterval];
+    
+  
+}
 
 
 -(void)generateBubble{
     BubbleNode *bubble = [[BubbleNode alloc]init];
     //Generate bubble at a specificPosition
-    [self addChild:[bubble bubbleAtPosition:CGPointMake([self generateRandomFloatBetween:400 and:600], 300)]];
+    
+
+    [self addChild:[bubble bubbleAtPosition:CGPointMake([self generateRandomFloatBetween:320 and: self.size.width - 320], self.size.height + 10)]];
+
+
 }
 
 
 -(CGFloat)generateRandomFloatBetween:(NSInteger) firstNumber and:(NSInteger)secondNumber{
-    return (CGFloat)(firstNumber + arc4random_uniform((u_int32_t)secondNumber - (u_int32_t)firstNumber + 1));
+     return floorf(((double)arc4random() / ARC4RANDOM_MAX) * (secondNumber - firstNumber) + firstNumber);
 }
 
-
-
-
--(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+-(void)spawnBubbleWithInterval
+{
+    [self runAction:[SKAction repeatActionForever:[SKAction sequence:@[[SKAction performSelector:@selector(generateBubble) onTarget:self], [SKAction waitForDuration:5.0]]]] withKey:@"generateBubble" ];
 }
-
+    
 @end
