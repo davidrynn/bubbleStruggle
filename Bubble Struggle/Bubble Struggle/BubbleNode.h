@@ -10,6 +10,7 @@
 
 @interface BubbleNode : SKSpriteNode
 
+
 -(SKSpriteNode *)bubbleAtPosition: (CGPoint) position;
 
 @end
