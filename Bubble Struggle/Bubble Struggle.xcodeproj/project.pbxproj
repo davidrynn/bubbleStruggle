@@ -18,6 +18,10 @@
 		220BB0321B4AFBB000C41B10 /* Bubble_StruggleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0311B4AFBB000C41B10 /* Bubble_StruggleTests.m */; };
 		220BB03D1B4AFC0600C41B10 /* BubbleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB03C1B4AFC0600C41B10 /* BubbleNode.m */; };
 		220BB03F1B4AFCCF00C41B10 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 220BB03E1B4AFCCF00C41B10 /* Sprites.atlas */; };
+		22238EDE1B5060DB007B035C /* GroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 22238EDD1B5060DB007B035C /* GroundNode.m */; };
+		2244F2081B4D5F90006ADC77 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244F2071B4D5F90006ADC77 /* Utility.m */; };
+		2244F20B1B4D6250006ADC77 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2244F2091B4D6250006ADC77 /* MyParticle.sks */; };
+		2244F20C1B4D6250006ADC77 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2244F20A1B4D6250006ADC77 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,12 @@
 		220BB03B1B4AFC0600C41B10 /* BubbleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleNode.h; sourceTree = "<group>"; };
 		220BB03C1B4AFC0600C41B10 /* BubbleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleNode.m; sourceTree = "<group>"; };
 		220BB03E1B4AFCCF00C41B10 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		22238EDC1B5060DB007B035C /* GroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundNode.h; sourceTree = "<group>"; };
+		22238EDD1B5060DB007B035C /* GroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroundNode.m; sourceTree = "<group>"; };
+		2244F2061B4D5F90006ADC77 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		2244F2071B4D5F90006ADC77 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		2244F2091B4D6250006ADC77 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		2244F20A1B4D6250006ADC77 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +101,16 @@
 		220BB00F1B4AFBB000C41B10 /* Bubble Struggle */ = {
 			isa = PBXGroup;
 			children = (
-				220BB0141B4AFBB000C41B10 /* AppDelegate.h */,
-				220BB0151B4AFBB000C41B10 /* AppDelegate.m */,
+				2244F2061B4D5F90006ADC77 /* Utility.h */,
+				2244F2071B4D5F90006ADC77 /* Utility.m */,
 				220BB0171B4AFBB000C41B10 /* GameScene.h */,
 				220BB0181B4AFBB000C41B10 /* GameScene.m */,
+				2244F2091B4D6250006ADC77 /* MyParticle.sks */,
+				2244F20A1B4D6250006ADC77 /* spark.png */,
 				220BB03B1B4AFC0600C41B10 /* BubbleNode.h */,
 				220BB03C1B4AFC0600C41B10 /* BubbleNode.m */,
+				22238EDC1B5060DB007B035C /* GroundNode.h */,
+				22238EDD1B5060DB007B035C /* GroundNode.m */,
 				220BB01A1B4AFBB000C41B10 /* GameScene.sks */,
 				220BB01C1B4AFBB000C41B10 /* GameViewController.h */,
 				220BB01D1B4AFBB000C41B10 /* GameViewController.m */,
@@ -112,6 +126,8 @@
 		220BB0101B4AFBB000C41B10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				220BB0141B4AFBB000C41B10 /* AppDelegate.h */,
+				220BB0151B4AFBB000C41B10 /* AppDelegate.m */,
 				220BB0111B4AFBB000C41B10 /* Info.plist */,
 				220BB0121B4AFBB000C41B10 /* main.m */,
 			);
@@ -216,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				220BB0261B4AFBB000C41B10 /* LaunchScreen.xib in Resources */,
+				2244F20B1B4D6250006ADC77 /* MyParticle.sks in Resources */,
 				220BB0231B4AFBB000C41B10 /* Images.xcassets in Resources */,
+				2244F20C1B4D6250006ADC77 /* spark.png in Resources */,
 				220BB01B1B4AFBB000C41B10 /* GameScene.sks in Resources */,
 				220BB0211B4AFBB000C41B10 /* Main.storyboard in Resources */,
 				220BB03F1B4AFCCF00C41B10 /* Sprites.atlas in Resources */,
@@ -237,10 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22238EDE1B5060DB007B035C /* GroundNode.m in Sources */,
 				220BB01E1B4AFBB000C41B10 /* GameViewController.m in Sources */,
 				220BB0161B4AFBB000C41B10 /* AppDelegate.m in Sources */,
 				220BB03D1B4AFC0600C41B10 /* BubbleNode.m in Sources */,
 				220BB0191B4AFBB000C41B10 /* GameScene.m in Sources */,
+				2244F2081B4D5F90006ADC77 /* Utility.m in Sources */,
 				220BB0131B4AFBB000C41B10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,13 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+typedef NS_ENUM(NSUInteger, BubbleType) {
+
+    BubbleTypeA  = 0,
+    BubbleTypeB  = 1
+
+};
+
 @interface BubbleNode : SKSpriteNode
 
 

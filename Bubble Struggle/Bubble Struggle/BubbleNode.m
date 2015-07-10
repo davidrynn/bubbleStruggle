@@ -7,6 +7,7 @@
 //
 
 #import "BubbleNode.h"
+#import "Utility.h"
 
 
 #define ARC4RANDOM_MAX 0x100000000
@@ -21,7 +22,9 @@
 
     //Physics
     
-    bubble.physicsBody.affectedByGravity = NO;
+    [self setupPhysics:bubble];
+    
+
     
 
     [self randomBubbleFloat:bubble];
@@ -36,11 +39,24 @@
     
     return bubble;
 }
+-(void)setupPhysics:(SKSpriteNode *)bubble {
+    
+    bubble.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:bubble.frame.size.width/2];
+//    bubble.physicsBody = [SKPhysicsBody  bodyWithRectangleOfSize:bubble.frame.size];
 
+    bubble.physicsBody.affectedByGravity = YES;
+    self.physicsBody.categoryBitMask = CollisionCategoryBubble;
+    self.physicsBody.collisionBitMask = 0;
+    self.physicsBody.contactTestBitMask = CollisionCategoryGround; // 0010 | 1000 = 1010
+
+    
+}
 -(void)randomBubbleFloat:(SKSpriteNode *)bubble{
     
     //Floating Action
-    SKAction *moveDown = [SKAction moveToY:40 duration:[self generateRandomFloatBetween:5 and:18]];
+    
+    //Here's where they stop moving at bottom of scene
+ //   SKAction *moveDown = [SKAction moveToY:40 duration:[self generateRandomFloatBetween:5 and:18]];
     
     
     CGVector right = CGVectorMake([self generateRandomFloatBetween:10 and:15], 0);
@@ -50,14 +66,16 @@
     SKAction *moveToLeft =  [SKAction moveBy:left duration:1.5];
     SKAction *repeatLeftRight = [SKAction repeatActionForever:[SKAction sequence:@[moveToRight,moveToLeft]]];
     
-    [bubble runAction:moveDown];
+ //   [bubble runAction:moveDown];
     [bubble runAction: repeatLeftRight];
 
 }
 
 
 -(void)randomBubbleSize:(SKSpriteNode *)bubble{
-    float number = [self generateRandomFloatBetween:0.8 and: 1.1];
+    float number = ((float)[Utility randomIntegerBetweenAndIncluding:6 maximum:11])/10;
+//float number = [self generateRandomFloatBetween:8 and: 11]/10;
+    NSLog(@"bubble size: %f", number);
     SKAction *scale = [SKAction scaleXBy:number y:number duration:0];
     [bubble runAction:scale];
 }
