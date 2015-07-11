@@ -34,7 +34,7 @@
     GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 22)];
     ground.zPosition = 15;
     
-    self.physicsWorld.gravity = CGVectorMake(0, -0.8);
+    self.physicsWorld.gravity = CGVectorMake(0, -0.6);
     
     [self addChild:ground];
     
@@ -72,7 +72,7 @@
     
 -(void)update:(CFTimeInterval)currentTime {
     if ((int)(self.timeInterval)%100==0) {
-        self.timeInterval-=2;
+
         [self spawnBubbleWithInterval];
     }
     self.timeInterval ++;
@@ -91,11 +91,12 @@
         firstBody = contact.bodyB;
         secondBody = contact.bodyA;
     }
+    NSLog(@"firstBody desc = %@", firstBody.description);
     if ( firstBody.categoryBitMask == CollisionCategoryBubble &&
         secondBody.categoryBitMask == CollisionCategoryGround ) {
         NSLog(@"Hit ground!");
         
-        BubbleNode *bubble = (BubbleNode *) firstBody.node;
+      //  BubbleNode *bubble = (BubbleNode *) firstBody.node;
 
         
 //        [self runAction:self.damageSFX];

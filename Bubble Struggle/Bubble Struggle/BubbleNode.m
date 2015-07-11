@@ -41,13 +41,12 @@
 }
 -(void)setupPhysics:(SKSpriteNode *)bubble {
     
-    bubble.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:bubble.frame.size.width/2];
-//    bubble.physicsBody = [SKPhysicsBody  bodyWithRectangleOfSize:bubble.frame.size];
+    bubble.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(bubble.frame.size.width/2)-0.5];
 
     bubble.physicsBody.affectedByGravity = YES;
-    self.physicsBody.categoryBitMask = CollisionCategoryBubble;
-    self.physicsBody.collisionBitMask = 0;
-    self.physicsBody.contactTestBitMask = CollisionCategoryGround; // 0010 | 1000 = 1010
+    bubble.physicsBody.categoryBitMask = CollisionCategoryBubble;
+//    bubble.physicsBody.collisionBitMask = 0;
+    bubble.physicsBody.contactTestBitMask = CollisionCategoryGround; // 0010
 
     
 }
@@ -88,8 +87,8 @@
 }
 
 -(void)randomBubbleScaling:(SKSpriteNode *)bubble{
-    SKAction *scaleBubbleUp = [SKAction scaleXBy:1.05 y:1.05 duration:1.4];
-    SKAction *scaleBubbleDown = [SKAction scaleXBy: 0.9524 y: 0.9524 duration:1.4];
+    SKAction *scaleBubbleUp = [SKAction scaleXBy:0.971 y:1.03 duration:0.5];
+    SKAction *scaleBubbleDown = [SKAction scaleXBy:1.03  y: 0.971 duration:0.5];
     SKAction *repeatBubbleScaling = [SKAction repeatActionForever:[SKAction sequence:@[scaleBubbleUp,scaleBubbleDown]]];
     [bubble runAction:repeatBubbleScaling];
 }
