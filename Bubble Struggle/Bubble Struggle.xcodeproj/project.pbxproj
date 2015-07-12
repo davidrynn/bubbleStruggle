@@ -22,6 +22,16 @@
 		2244F2081B4D5F90006ADC77 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244F2071B4D5F90006ADC77 /* Utility.m */; };
 		2244F20B1B4D6250006ADC77 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2244F2091B4D6250006ADC77 /* MyParticle.sks */; };
 		2244F20C1B4D6250006ADC77 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2244F20A1B4D6250006ADC77 /* spark.png */; };
+		2281F8791B50FACA005E4D37 /* SideNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2281F8781B50FACA005E4D37 /* SideNode.m */; };
+		22B6F4B81B51CD1E006B05DF /* LateNightMix.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */; };
+		22B6F4C51B51D168006B05DF /* bubblePop3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4C41B51D168006B05DF /* bubblePop3.caf */; };
+		22B6F4C71B51D1EA006B05DF /* bubbleSpawn3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */; };
+		22B6F4CD1B51DB32006B05DF /* CeilingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B6F4CC1B51DB32006B05DF /* CeilingNode.m */; };
+		22B6F4D01B51E105006B05DF /* THGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B6F4CF1B51E105006B05DF /* THGameOverNode.m */; };
+		22B6F4D21B51EA1F006B05DF /* snapBubble.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4D11B51EA1F006B05DF /* snapBubble.caf */; };
+		22B6F4D51B51F035006B05DF /* tack3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4D31B51F035006B05DF /* tack3.caf */; };
+		22B6F4D61B51F035006B05DF /* tack5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4D41B51F035006B05DF /* tack5.caf */; };
+		22B6F4D81B51F36C006B05DF /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4D71B51F36C006B05DF /* gameOver.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +70,19 @@
 		2244F2071B4D5F90006ADC77 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		2244F2091B4D6250006ADC77 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2244F20A1B4D6250006ADC77 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		2281F8771B50FACA005E4D37 /* SideNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideNode.h; path = ../SideNode.h; sourceTree = "<group>"; };
+		2281F8781B50FACA005E4D37 /* SideNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideNode.m; path = ../SideNode.m; sourceTree = "<group>"; };
+		22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = LateNightMix.m4a; sourceTree = "<group>"; };
+		22B6F4C41B51D168006B05DF /* bubblePop3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubblePop3.caf; sourceTree = "<group>"; };
+		22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubbleSpawn3.caf; sourceTree = "<group>"; };
+		22B6F4CB1B51DB32006B05DF /* CeilingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CeilingNode.h; path = ../CeilingNode.h; sourceTree = "<group>"; };
+		22B6F4CC1B51DB32006B05DF /* CeilingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CeilingNode.m; path = ../CeilingNode.m; sourceTree = "<group>"; };
+		22B6F4CE1B51E105006B05DF /* THGameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THGameOverNode.h; sourceTree = "<group>"; };
+		22B6F4CF1B51E105006B05DF /* THGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THGameOverNode.m; sourceTree = "<group>"; };
+		22B6F4D11B51EA1F006B05DF /* snapBubble.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = snapBubble.caf; sourceTree = "<group>"; };
+		22B6F4D31B51F035006B05DF /* tack3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack3.caf; sourceTree = "<group>"; };
+		22B6F4D41B51F035006B05DF /* tack5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack5.caf; sourceTree = "<group>"; };
+		22B6F4D71B51F36C006B05DF /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +124,7 @@
 		220BB00F1B4AFBB000C41B10 /* Bubble Struggle */ = {
 			isa = PBXGroup;
 			children = (
+				22B6F4AF1B51CD0E006B05DF /* Sounds */,
 				2244F2061B4D5F90006ADC77 /* Utility.h */,
 				2244F2071B4D5F90006ADC77 /* Utility.m */,
 				220BB0171B4AFBB000C41B10 /* GameScene.h */,
@@ -111,8 +135,14 @@
 				220BB03C1B4AFC0600C41B10 /* BubbleNode.m */,
 				22238EDC1B5060DB007B035C /* GroundNode.h */,
 				22238EDD1B5060DB007B035C /* GroundNode.m */,
+				22B6F4CB1B51DB32006B05DF /* CeilingNode.h */,
+				22B6F4CC1B51DB32006B05DF /* CeilingNode.m */,
+				2281F8771B50FACA005E4D37 /* SideNode.h */,
+				2281F8781B50FACA005E4D37 /* SideNode.m */,
 				220BB01A1B4AFBB000C41B10 /* GameScene.sks */,
 				220BB01C1B4AFBB000C41B10 /* GameViewController.h */,
+				22B6F4CE1B51E105006B05DF /* THGameOverNode.h */,
+				22B6F4CF1B51E105006B05DF /* THGameOverNode.m */,
 				220BB01D1B4AFBB000C41B10 /* GameViewController.m */,
 				220BB01F1B4AFBB000C41B10 /* Main.storyboard */,
 				220BB0221B4AFBB000C41B10 /* Images.xcassets */,
@@ -149,6 +179,20 @@
 				220BB0301B4AFBB000C41B10 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22B6F4AF1B51CD0E006B05DF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				22B6F4C41B51D168006B05DF /* bubblePop3.caf */,
+				22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */,
+				22B6F4D31B51F035006B05DF /* tack3.caf */,
+				22B6F4D41B51F035006B05DF /* tack5.caf */,
+				22B6F4D11B51EA1F006B05DF /* snapBubble.caf */,
+				22B6F4D71B51F36C006B05DF /* gameOver.mp3 */,
+				22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,13 +275,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B6F4D21B51EA1F006B05DF /* snapBubble.caf in Resources */,
+				22B6F4C71B51D1EA006B05DF /* bubbleSpawn3.caf in Resources */,
+				22B6F4D81B51F36C006B05DF /* gameOver.mp3 in Resources */,
 				220BB0261B4AFBB000C41B10 /* LaunchScreen.xib in Resources */,
+				22B6F4B81B51CD1E006B05DF /* LateNightMix.m4a in Resources */,
 				2244F20B1B4D6250006ADC77 /* MyParticle.sks in Resources */,
+				22B6F4C51B51D168006B05DF /* bubblePop3.caf in Resources */,
+				22B6F4D61B51F035006B05DF /* tack5.caf in Resources */,
 				220BB0231B4AFBB000C41B10 /* Images.xcassets in Resources */,
 				2244F20C1B4D6250006ADC77 /* spark.png in Resources */,
 				220BB01B1B4AFBB000C41B10 /* GameScene.sks in Resources */,
 				220BB0211B4AFBB000C41B10 /* Main.storyboard in Resources */,
 				220BB03F1B4AFCCF00C41B10 /* Sprites.atlas in Resources */,
+				22B6F4D51B51F035006B05DF /* tack3.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,13 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2281F8791B50FACA005E4D37 /* SideNode.m in Sources */,
 				22238EDE1B5060DB007B035C /* GroundNode.m in Sources */,
 				220BB01E1B4AFBB000C41B10 /* GameViewController.m in Sources */,
 				220BB0161B4AFBB000C41B10 /* AppDelegate.m in Sources */,
 				220BB03D1B4AFC0600C41B10 /* BubbleNode.m in Sources */,
+				22B6F4D01B51E105006B05DF /* THGameOverNode.m in Sources */,
 				220BB0191B4AFBB000C41B10 /* GameScene.m in Sources */,
 				2244F2081B4D5F90006ADC77 /* Utility.m in Sources */,
 				220BB0131B4AFBB000C41B10 /* main.m in Sources */,
+				22B6F4CD1B51DB32006B05DF /* CeilingNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

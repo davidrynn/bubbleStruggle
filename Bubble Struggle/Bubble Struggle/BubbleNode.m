@@ -44,12 +44,27 @@
     bubble.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(bubble.frame.size.width/2)-0.5];
 
     bubble.physicsBody.affectedByGravity = YES;
-    bubble.physicsBody.categoryBitMask = CollisionCategoryBubble;
-//    bubble.physicsBody.collisionBitMask = 0;
-    bubble.physicsBody.contactTestBitMask = CollisionCategoryGround; // 0010
+//    bubble.physicsBody.velocity = CGVectorMake(0, -150);
+    bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeA;
+    bubble.physicsBody.collisionBitMask = CollisionCategoryGround | CollisionCategoryBubbleTypeB | CollisionCategorySide;
+    bubble.physicsBody.contactTestBitMask = CollisionCategoryGround | CollisionCategorySide | CollisionCategoryBubbleTypeB; // 0111
 
     
 }
+
+-(void)setupPhysicsTypeB:(SKSpriteNode *)bubble {
+    
+//    bubble.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(bubble.frame.size.width/2)-0.5];
+    
+//    bubble.physicsBody.affectedByGravity = YES;
+    //    bubble.physicsBody.velocity = CGVectorMake(0, -150);
+    bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeB;
+//    bubble.physicsBody.collisionBitMask = 0;
+    bubble.physicsBody.contactTestBitMask = CollisionCategoryGround; // 0010
+    
+    
+}
+
 -(void)randomBubbleFloat:(SKSpriteNode *)bubble{
     
     //Floating Action
@@ -74,7 +89,7 @@
 -(void)randomBubbleSize:(SKSpriteNode *)bubble{
     float number = ((float)[Utility randomIntegerBetweenAndIncluding:6 maximum:11])/10;
 //float number = [self generateRandomFloatBetween:8 and: 11]/10;
-    NSLog(@"bubble size: %f", number);
+//    NSLog(@"bubble size: %f", number);
     SKAction *scale = [SKAction scaleXBy:number y:number duration:0];
     [bubble runAction:scale];
 }
@@ -87,8 +102,8 @@
 }
 
 -(void)randomBubbleScaling:(SKSpriteNode *)bubble{
-    SKAction *scaleBubbleUp = [SKAction scaleXBy:0.971 y:1.03 duration:0.5];
-    SKAction *scaleBubbleDown = [SKAction scaleXBy:1.03  y: 0.971 duration:0.5];
+    SKAction *scaleBubbleUp = [SKAction scaleXBy:0.98039216 y:1.02 duration:0.1];
+    SKAction *scaleBubbleDown = [SKAction scaleXBy:1.02  y: 0.98039216 duration:0.1];
     SKAction *repeatBubbleScaling = [SKAction repeatActionForever:[SKAction sequence:@[scaleBubbleUp,scaleBubbleDown]]];
     [bubble runAction:repeatBubbleScaling];
 }

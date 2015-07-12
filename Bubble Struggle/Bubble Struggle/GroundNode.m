@@ -12,7 +12,7 @@
 @implementation GroundNode
 
 + (instancetype) groundWithSize:(CGSize)size {
-    GroundNode *ground = [self spriteNodeWithColor:[SKColor redColor] size:size];
+    GroundNode *ground = [self spriteNodeWithColor:[SKColor grayColor] size:size];
     ground.name = @"Ground";
     ground.position = CGPointMake(size.width/2,size.height/2);
     [ground setupPhysicsBody];
@@ -26,7 +26,7 @@
     self.physicsBody.affectedByGravity = NO;
     self.physicsBody.dynamic = NO;
     self.physicsBody.categoryBitMask = CollisionCategoryGround;
-//        self.physicsBody.collisionBitMask = CollisionCategoryDebris;
+    self.physicsBody.collisionBitMask = CollisionCategoryBubbleTypeA;
 //        self.physicsBody.contactTestBitMask = CollisionCategoryEnemy;
 }
 

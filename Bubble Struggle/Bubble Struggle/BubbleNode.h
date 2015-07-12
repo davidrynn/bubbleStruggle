@@ -19,5 +19,5 @@ typedef NS_ENUM(NSUInteger, BubbleType) {
 
 
 -(SKSpriteNode *)bubbleAtPosition: (CGPoint) position;
-
+-(void)setupPhysicsTypeB:(SKSpriteNode *)bubble;
 @end

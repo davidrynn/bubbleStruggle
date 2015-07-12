@@ -11,8 +11,11 @@
 
 
 typedef NS_OPTIONS(uint32_t, CollisionCategory) {
-    CollisionCategoryBubble   = 1 << 0,       // 0000
-    CollisionCategoryGround   = 1 << 1       // 0010
+    CollisionCategoryBubbleTypeA = 1 << 0,       // 0000
+    CollisionCategoryBubbleTypeB =1  << 1,      // 0010
+    CollisionCategoryGround     = 1 << 3,       // 0100
+    CollisionCategorySide       = 1 << 4,        // 1000
+    CollisionCategoryCeiling    = 1 << 5
 
 };
 
