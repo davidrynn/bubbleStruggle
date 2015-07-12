@@ -9,5 +9,11 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface HudNode : SKNode
+@property (nonatomic) NSInteger score;
+@property (nonatomic) NSInteger time;
 
++ (instancetype) hudAtPosition:(CGPoint)position inFrame:(CGRect)frame;
+
+- (void) addPoints:(NSInteger)points;
+- (void) addTimeInterval: (NSTimeInterval) interval;
 @end

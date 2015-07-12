@@ -12,6 +12,7 @@
 #import "SideNode.h"
 #import "CeilingNode.h"
 #import "Utility.h"
+#import "HudNode.h"
 #import "THGameOverNode.h"
 #import <AVFoundation/AVFoundation.h>
 
@@ -56,8 +57,8 @@
 
     [self addChild:background];
     
-    GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 22)];
-    ground.zPosition = 15;
+    GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 54)];
+    ground.zPosition = 2;
     [self addChild:ground];
     
     CeilingNode *ceiling = [CeilingNode ceilingWithSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
@@ -75,8 +76,9 @@
     rightSide.zPosition = 14;
     [self addChild:rightSide];
     
-    
-    
+    HudNode *hud = [HudNode hudAtPosition:CGPointMake(0, ground.size.height/2) inFrame:self.frame];
+    hud.zPosition = 15;
+    [self addChild:hud];
 
 
     
@@ -121,6 +123,15 @@
     
 }
 
+
+- (void) addPoints:(NSInteger)points{
+    if (!self.gameOverDisplayed){
+        HudNode *hud = (HudNode*)[self childNodeWithName:@"HUD"];
+        [hud addPoints:points];
+    }
+}
+
+
 -(void) joinBodies: (SKPhysicsBody *) bodyA secondBody: (SKPhysicsBody *) bodyB jointPoint: (CGPoint) point {
 
     SKPhysicsJointFixed *joint = [SKPhysicsJointFixed jointWithBodyA:bodyA bodyB:bodyB anchor:point];
@@ -133,11 +144,12 @@
     CGPoint touchPoint = [touchedNode locationInNode:self]; // (x, y) of where the touch was
     SKNode *node = [self nodeAtPoint:touchPoint]; // Returns the node at touch
 
-    NSLog(@"X: %f",touchPoint.x);
-    NSLog(@"Y: %f",touchPoint.y);
-    if ([node.name isEqualToString:@"bubbleNode"]){
+//    NSLog(@"X: %f",touchPoint.x);
+//    NSLog(@"Y: %f",touchPoint.y);
+    if ([node.name isEqualToString:@"bubbleNode"] && !self.gameOverDisplayed){
             // do something with that node
             [node removeFromParent];
+        [self addPoints:100];
             NSLog(@"%@",node);
         
             NSString *explosionPath = [[NSBundle mainBundle] pathForResource:@"MyParticle" ofType:@"sks"];
@@ -167,6 +179,12 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     NSLog(@"time interval: %f", self.addBubbleTimeInterval);
+   
+    if (!self.gameOverDisplayed) {
+        HudNode *hud = (HudNode *)[self childNodeWithName:@"HUD"];
+        [hud addTimeInterval:self.totalGameTime];
+    }
+
     
     if ( self.lastUpdateTimeInterval ) {
         self.timeSinceBubbleAdded += currentTime - self.lastUpdateTimeInterval;
