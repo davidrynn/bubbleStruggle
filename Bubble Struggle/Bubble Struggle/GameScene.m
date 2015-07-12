@@ -27,6 +27,7 @@
 @property (nonatomic) SKAction *spawnSFX;
 @property (nonatomic) AVAudioPlayer *backgroundMusic;
 @property (nonatomic) AVAudioPlayer *gameOverMusic;
+@property (nonatomic) BOOL addBubbleToggle;
 @property (nonatomic) BOOL gameOver;
 @property (nonatomic) BOOL restart;
 @property (nonatomic) BOOL gameOverDisplayed;
@@ -40,16 +41,19 @@
     
     self.lastUpdateTimeInterval = 0;
     self.timeSinceBubbleAdded = 0;
-    self.addBubbleTimeInterval = 1.5;
+    self.addBubbleTimeInterval = 1.0;
     self.totalGameTime = 0;
     
     self.size = self.view.frame.size;
-    //Setup background
+    self.physicsWorld.contactDelegate = self;
+    self.physicsWorld.gravity = CGVectorMake(0, -0.1);
+    
+    //Setup Nodes
     CGPoint centerScreen = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"bubble"];
 //    background.size = CGSizeMake(self.frame.size.width, self.frame.size.height);
     background.position =centerScreen;
-    self.physicsWorld.contactDelegate = self;
+
     [self addChild:background];
     
     GroundNode *ground = [GroundNode groundWithSize:CGSizeMake(self.frame.size.width, 22)];
@@ -74,11 +78,14 @@
     
     
 
-    self.physicsWorld.gravity = CGVectorMake(0, -0.1);
+
     
     [self soundSetup];
     [self.backgroundMusic play];
-//
+
+    
+    
+    //FOR POSSIBLE FUTURE LIGHT SOURCE
 //    //Setup a LightNode
 //    SKLightNode* light = [[SKLightNode alloc] init];
 //    light.categoryBitMask = 1;
@@ -100,7 +107,7 @@
     self.backgroundMusic.volume =0.4;
     [self.backgroundMusic prepareToPlay];
 
-    self.popSFX = [SKAction playSoundFileNamed:@"tack3.caf" waitForCompletion:NO];
+    self.popSFX = [SKAction playSoundFileNamed:@"bubbleSpawn3.caf" waitForCompletion:NO];
     
 
     self.spawnSFX = [SKAction playSoundFileNamed:@"bubbleSpawn3.caf" waitForCompletion:YES];
@@ -108,8 +115,8 @@
     NSURL *gameOverURL = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"mp3"];
     
     self.gameOverMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:gameOverURL error:nil];
-    self.gameOverMusic.volume= 0.4;
-    self.gameOverMusic.numberOfLoops = 1;
+    self.gameOverMusic.volume= 0.3;
+    self.gameOverMusic.numberOfLoops = 0;
     [self.gameOverMusic prepareToPlay];
     
 }
@@ -159,7 +166,7 @@
 
 
 -(void)update:(CFTimeInterval)currentTime {
-
+    NSLog(@"time interval: %f", self.addBubbleTimeInterval);
     
     if ( self.lastUpdateTimeInterval ) {
         self.timeSinceBubbleAdded += currentTime - self.lastUpdateTimeInterval;
@@ -173,21 +180,25 @@
     
     self.lastUpdateTimeInterval = currentTime;
     
-    if ( self.totalGameTime > 480 ) {
+    if ( self.totalGameTime > 480 && self.addBubbleToggle) {
         // 480 / 60 = 8 minutes
-        self.addBubbleTimeInterval = 0.50;
+        self.addBubbleToggle = NO;
+        self.addBubbleTimeInterval *= .75;
     //    self.minSpeed = -160;
         
-    } else if ( self.totalGameTime > 240 ) {
+    } else if ( self.totalGameTime > 240 && self.totalGameTime <= 480 && !self.addBubbleToggle) {
         // 240 / 60 = 4 minutes
-        self.addBubbleTimeInterval = 0.65;
+        self.addBubbleToggle = YES;
+        self.addBubbleTimeInterval *= .75;
 //        self.minSpeed = -150;
-    } else if ( self.totalGameTime > 20 ) {
+    } else if ( self.totalGameTime > 20 && self.totalGameTime <= 240 && self.addBubbleToggle) {
         // 120 / 60 = 2 minutes
-        self.addBubbleTimeInterval = 0.75;
+        self.addBubbleToggle = NO;
+        self.addBubbleTimeInterval *= .75;
 //        self.minSpeed = -125;
-    } else if ( self.totalGameTime > 10 ) {
-        self.addBubbleTimeInterval = 1.00;
+    } else if ( self.totalGameTime > 10 && self.totalGameTime <= 20 && !self.addBubbleToggle) {
+        self.addBubbleToggle =YES;
+        self.addBubbleTimeInterval *= .75;
 //        self.minSpeed = -100;
     }
 
@@ -200,11 +211,16 @@
     [self addChild:gameOver];
     self.restart = YES;
     self.gameOver =YES;
+    
+    if (!self.gameOverDisplayed) {
+        [self.gameOverMusic play];
+    }
+    
     self.gameOverDisplayed = YES;
     [gameOver performAnimation];
     
     [self.backgroundMusic stop];
-    [self.gameOverMusic play];
+
 
 }
 
@@ -225,7 +241,7 @@
         ((secondBody.categoryBitMask == CollisionCategoryGround) ||
         (secondBody.categoryBitMask == CollisionCategoryBubbleTypeB )) )
     {
-        NSLog(@"Hit ground!");
+//        NSLog(@"Hit ground!");
         
         [self joinBodies:firstBody secondBody:secondBody jointPoint:contact.contactPoint];
         BubbleNode *bubble = (BubbleNode *) firstBody.node;
@@ -237,23 +253,15 @@
     
         if (firstBody.categoryBitMask == CollisionCategoryBubbleTypeA &&
             secondBody.categoryBitMask == CollisionCategorySide){
-            NSLog(@"side hit");};
+//            NSLog(@"side hit");
+        };
     
     if(firstBody.categoryBitMask == CollisionCategoryBubbleTypeB &&
        secondBody.categoryBitMask == CollisionCategoryCeiling){
         [self performGameOver];
         NSLog(@"GAME OVER!!!");
     }
- //       bubble.physicsBody.velocity = CGVectorMake(0, 0);
-//        [self runAction:self.damageSFX];
-//        THSpaceDogNode *spaceDog = (THSpaceDogNode *)firstBody.node;
-//        [spaceDog removeFromParent];
-        
- //       [self loseLife];
 
-    
-    
-//    [self createDebrisAtPosition:contact.contactPoint];
 
 
 }
@@ -275,7 +283,7 @@
     [self addChild:[bubble bubbleAtPosition:CGPointMake(x, y)]];
     
     
-        [self runAction:self.spawnSFX];
+  //      [self runAction:self.spawnSFX];
     
     
     
