@@ -28,6 +28,7 @@
 @property (nonatomic) SKAction *spawnSFX;
 @property (nonatomic) AVAudioPlayer *backgroundMusic;
 @property (nonatomic) AVAudioPlayer *gameOverMusic;
+@property (nonatomic) NSInteger score;
 @property (nonatomic) BOOL addBubbleToggle;
 @property (nonatomic) BOOL gameOver;
 @property (nonatomic) BOOL restart;
@@ -127,7 +128,9 @@
 - (void) addPoints:(NSInteger)points{
     if (!self.gameOverDisplayed){
         HudNode *hud = (HudNode*)[self childNodeWithName:@"HUD"];
+
         [hud addPoints:points];
+        self.score = hud.score;
     }
 }
 
@@ -225,7 +228,7 @@
 }
 
 - (void) performGameOver {
-    THGameOverNode *gameOver = [THGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+    THGameOverNode *gameOver = [THGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)) withScore:self.score];
     [self addChild:gameOver];
     self.restart = YES;
     self.gameOver =YES;

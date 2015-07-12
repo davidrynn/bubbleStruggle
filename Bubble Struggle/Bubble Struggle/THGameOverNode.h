@@ -10,7 +10,7 @@
 
 @interface THGameOverNode : SKNode
 
-+ (instancetype) gameOverAtPosition:(CGPoint)position;
++ (instancetype) gameOverAtPosition:(CGPoint)position withScore: (NSInteger) score;
 
 - (void) performAnimation;
 

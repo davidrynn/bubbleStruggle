@@ -9,13 +9,13 @@
 #import "THGameOverNode.h"
 
 @implementation THGameOverNode
-+ (instancetype) gameOverAtPosition:(CGPoint)position {
++ (instancetype) gameOverAtPosition:(CGPoint)position withScore: (NSInteger) score {
     THGameOverNode *gameOver = [self node];
     
     SKLabelNode *gameOverLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     gameOverLabel.fontColor =[UIColor blueColor];
     gameOverLabel.name = @"GameOver";
-    gameOverLabel.text = @"Game Over";
+    gameOverLabel.text = [NSString stringWithFormat:@"Game Over\n\nScore: %ld", score];
     gameOverLabel.fontSize = 48;
     gameOverLabel.position = position;
     [gameOver addChild:gameOverLabel];
