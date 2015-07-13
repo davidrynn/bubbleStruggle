@@ -14,7 +14,7 @@
 
 
 
-    SideNode *side = [self spriteNodeWithColor:[SKColor greenColor] size:size];
+    SideNode *side = [self spriteNodeWithColor:[SKColor clearColor] size:size];
     side.size = CGSizeMake(size.width/5, size.height);
     if (left) {
         side.name = @"LeftSide";
@@ -24,7 +24,7 @@
     side.name = @"RightSide";
         side.position = CGPointMake(size.width+ side.size.width*.4,size.height/2);
 
-        side.color = [SKColor blueColor];
+        side.color = [SKColor clearColor];
     }
 
     [side setupPhysicsBody];

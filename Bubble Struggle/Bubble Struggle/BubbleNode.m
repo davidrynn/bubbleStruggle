@@ -19,14 +19,13 @@
     SKSpriteNode *bubble = [SKSpriteNode spriteNodeWithImageNamed:@"bubble_sml_1"];
     bubble.position = position;
     bubble.name = @"bubbleNode";
+    
+    
 
     //Physics
-    
     [self setupPhysics:bubble];
-    
 
-    
-
+    //RandomFloating
     [self randomBubbleFloat:bubble];
     
     //Bubble Random Size
@@ -42,14 +41,10 @@
 -(void)setupPhysics:(SKSpriteNode *)bubble {
     
     bubble.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(bubble.frame.size.width/2)-0.5];
-
     bubble.physicsBody.affectedByGravity = YES;
-//    bubble.physicsBody.velocity = CGVectorMake(0, -150);
     bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeA;
     bubble.physicsBody.collisionBitMask = CollisionCategoryGround | CollisionCategoryBubbleTypeB | CollisionCategorySide;
-    bubble.physicsBody.contactTestBitMask = CollisionCategoryGround | CollisionCategorySide | CollisionCategoryBubbleTypeB; // 0111
-
-    
+    bubble.physicsBody.contactTestBitMask = CollisionCategoryGround | CollisionCategorySide | CollisionCategoryBubbleTypeB;
 }
 
 -(void)setupPhysicsTypeB:(SKSpriteNode *)bubble {
@@ -67,12 +62,6 @@
 
 -(void)randomBubbleFloat:(SKSpriteNode *)bubble{
     
-    //Floating Action
-    
-    //Here's where they stop moving at bottom of scene
- //   SKAction *moveDown = [SKAction moveToY:40 duration:[self generateRandomFloatBetween:5 and:18]];
-    
-    
     CGVector right = CGVectorMake([self generateRandomFloatBetween:10 and:15], 0);
     CGVector left = CGVectorMake( - [self generateRandomFloatBetween:10 and:15], 0);
     
@@ -80,23 +69,19 @@
     SKAction *moveToLeft =  [SKAction moveBy:left duration:1.5];
     SKAction *repeatLeftRight = [SKAction repeatActionForever:[SKAction sequence:@[moveToRight,moveToLeft]]];
     
- //   [bubble runAction:moveDown];
     [bubble runAction: repeatLeftRight];
 
 }
 
-
 -(void)randomBubbleSize:(SKSpriteNode *)bubble{
-    float number = ((float)[Utility randomIntegerBetweenAndIncluding:6 maximum:11])/10;
-//float number = [self generateRandomFloatBetween:8 and: 11]/10;
-//    NSLog(@"bubble size: %f", number);
+    float number = ((float)[Utility randomIntegerBetweenAndIncluding:6.5 maximum:8.2])/10;
     SKAction *scale = [SKAction scaleXBy:number y:number duration:0];
     [bubble runAction:scale];
 }
 
 -(void)randomBubbleRotation:(SKSpriteNode *)bubble{
-    SKAction *rotation = [SKAction rotateByAngle: M_PI/16.0 duration:1.7];
-    SKAction *reverseRotation = [SKAction rotateByAngle: - M_PI/16.0 duration:1.7];
+    SKAction *rotation = [SKAction rotateByAngle: M_PI/13.0 duration:1.7];
+    SKAction *reverseRotation = [SKAction rotateByAngle: - M_PI/13.0 duration:1.7];
     SKAction *repeatBubbleRotation = [SKAction repeatActionForever:[SKAction sequence:@[rotation,reverseRotation]]];
     [bubble runAction: repeatBubbleRotation];
 }
