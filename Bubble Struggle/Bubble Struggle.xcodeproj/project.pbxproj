@@ -24,6 +24,10 @@
 		2244F20C1B4D6250006ADC77 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2244F20A1B4D6250006ADC77 /* spark.png */; };
 		2281F8791B50FACA005E4D37 /* SideNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2281F8781B50FACA005E4D37 /* SideNode.m */; };
 		229772351B52989D00C305E9 /* HudNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 229772341B52989D00C305E9 /* HudNode.m */; };
+		2297723B1B533EEC00C305E9 /* BubbleIntro.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 229772371B533EEC00C305E9 /* BubbleIntro.m4a */; };
+		2297723C1B533EEC00C305E9 /* BubbleIntro2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 229772381B533EEC00C305E9 /* BubbleIntro2.m4a */; };
+		2297723D1B533EEC00C305E9 /* gameOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 229772391B533EEC00C305E9 /* gameOver.m4a */; };
+		2297723F1B5346B800C305E9 /* BubbleIntro2wBass.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2297723E1B5346B800C305E9 /* BubbleIntro2wBass.m4a */; };
 		22B6F4B81B51CD1E006B05DF /* LateNightMix.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */; };
 		22B6F4C51B51D168006B05DF /* bubblePop3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4C41B51D168006B05DF /* bubblePop3.caf */; };
 		22B6F4C71B51D1EA006B05DF /* bubbleSpawn3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */; };
@@ -75,6 +79,10 @@
 		2281F8781B50FACA005E4D37 /* SideNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideNode.m; path = ../SideNode.m; sourceTree = "<group>"; };
 		229772331B52989D00C305E9 /* HudNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudNode.h; sourceTree = "<group>"; };
 		229772341B52989D00C305E9 /* HudNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudNode.m; sourceTree = "<group>"; };
+		229772371B533EEC00C305E9 /* BubbleIntro.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro.m4a; sourceTree = "<group>"; };
+		229772381B533EEC00C305E9 /* BubbleIntro2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro2.m4a; sourceTree = "<group>"; };
+		229772391B533EEC00C305E9 /* gameOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOver.m4a; sourceTree = "<group>"; };
+		2297723E1B5346B800C305E9 /* BubbleIntro2wBass.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro2wBass.m4a; sourceTree = "<group>"; };
 		22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = LateNightMix.m4a; sourceTree = "<group>"; };
 		22B6F4C41B51D168006B05DF /* bubblePop3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubblePop3.caf; sourceTree = "<group>"; };
 		22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubbleSpawn3.caf; sourceTree = "<group>"; };
@@ -194,6 +202,10 @@
 				22B6F4D31B51F035006B05DF /* tack3.caf */,
 				22B6F4D41B51F035006B05DF /* tack5.caf */,
 				22B6F4D11B51EA1F006B05DF /* snapBubble.caf */,
+				2297723E1B5346B800C305E9 /* BubbleIntro2wBass.m4a */,
+				229772371B533EEC00C305E9 /* BubbleIntro.m4a */,
+				229772381B533EEC00C305E9 /* BubbleIntro2.m4a */,
+				229772391B533EEC00C305E9 /* gameOver.m4a */,
 				22B6F4D71B51F36C006B05DF /* gameOver.mp3 */,
 				22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */,
 			);
@@ -284,8 +296,12 @@
 				22B6F4C71B51D1EA006B05DF /* bubbleSpawn3.caf in Resources */,
 				22B6F4D81B51F36C006B05DF /* gameOver.mp3 in Resources */,
 				220BB0261B4AFBB000C41B10 /* LaunchScreen.xib in Resources */,
+				2297723D1B533EEC00C305E9 /* gameOver.m4a in Resources */,
 				22B6F4B81B51CD1E006B05DF /* LateNightMix.m4a in Resources */,
 				2244F20B1B4D6250006ADC77 /* MyParticle.sks in Resources */,
+				2297723C1B533EEC00C305E9 /* BubbleIntro2.m4a in Resources */,
+				2297723F1B5346B800C305E9 /* BubbleIntro2wBass.m4a in Resources */,
+				2297723B1B533EEC00C305E9 /* BubbleIntro.m4a in Resources */,
 				22B6F4C51B51D168006B05DF /* bubblePop3.caf in Resources */,
 				22B6F4D61B51F035006B05DF /* tack5.caf in Resources */,
 				220BB0231B4AFBB000C41B10 /* Images.xcassets in Resources */,

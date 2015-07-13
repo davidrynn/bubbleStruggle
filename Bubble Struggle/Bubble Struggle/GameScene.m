@@ -104,11 +104,11 @@
 
 - (void)soundSetup {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"LateNightMix" withExtension:@"m4a"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"BubbleIntro2" withExtension:@"m4a"];
     
     self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     self.backgroundMusic.numberOfLoops = -1;
-    self.backgroundMusic.volume =0.4;
+    self.backgroundMusic.volume =0.3;
     [self.backgroundMusic prepareToPlay];
     
     self.popSFX = [SKAction playSoundFileNamed:@"bubbleSpawn3.caf" waitForCompletion:NO];
@@ -116,11 +116,11 @@
     
     self.spawnSFX = [SKAction playSoundFileNamed:@"bubbleSpawn3.caf" waitForCompletion:YES];
     
-    NSURL *gameOverURL = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"mp3"];
+    NSURL *gameOverURL = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"m4a"];
     
     self.gameOverMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:gameOverURL error:nil];
     self.gameOverMusic.volume= 0.3;
-    self.gameOverMusic.numberOfLoops = 0;
+    self.gameOverMusic.numberOfLoops = 1;
     [self.gameOverMusic prepareToPlay];
     
 }
