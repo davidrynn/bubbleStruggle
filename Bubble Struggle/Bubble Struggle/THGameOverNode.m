@@ -16,7 +16,7 @@
     gameOverLabel.fontColor =[UIColor blueColor];
     gameOverLabel.name = @"GameOver";
     gameOverLabel.text = [NSString stringWithFormat:@"Game Over\n\nScore: %ld", score];
-    gameOverLabel.fontSize = 48;
+    gameOverLabel.fontSize = 32;
     gameOverLabel.position = position;
     [gameOver addChild:gameOverLabel];
     

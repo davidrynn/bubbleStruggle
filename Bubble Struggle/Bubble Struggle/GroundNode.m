@@ -27,7 +27,6 @@
     self.physicsBody.dynamic = NO;
     self.physicsBody.categoryBitMask = CollisionCategoryGround;
     self.physicsBody.collisionBitMask = CollisionCategoryBubbleTypeA;
-//        self.physicsBody.contactTestBitMask = CollisionCategoryEnemy;
 }
 
 
