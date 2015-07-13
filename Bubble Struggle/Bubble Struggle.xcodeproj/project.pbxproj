@@ -28,6 +28,7 @@
 		2297723C1B533EEC00C305E9 /* BubbleIntro2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 229772381B533EEC00C305E9 /* BubbleIntro2.m4a */; };
 		2297723D1B533EEC00C305E9 /* gameOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 229772391B533EEC00C305E9 /* gameOver.m4a */; };
 		2297723F1B5346B800C305E9 /* BubbleIntro2wBass.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2297723E1B5346B800C305E9 /* BubbleIntro2wBass.m4a */; };
+		229772441B543CA800C305E9 /* PauseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 229772431B543CA800C305E9 /* PauseNode.m */; };
 		22B6F4B81B51CD1E006B05DF /* LateNightMix.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */; };
 		22B6F4C51B51D168006B05DF /* bubblePop3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4C41B51D168006B05DF /* bubblePop3.caf */; };
 		22B6F4C71B51D1EA006B05DF /* bubbleSpawn3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */; };
@@ -83,6 +84,8 @@
 		229772381B533EEC00C305E9 /* BubbleIntro2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro2.m4a; sourceTree = "<group>"; };
 		229772391B533EEC00C305E9 /* gameOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOver.m4a; sourceTree = "<group>"; };
 		2297723E1B5346B800C305E9 /* BubbleIntro2wBass.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro2wBass.m4a; sourceTree = "<group>"; };
+		229772421B543CA800C305E9 /* PauseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseNode.h; sourceTree = "<group>"; };
+		229772431B543CA800C305E9 /* PauseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseNode.m; sourceTree = "<group>"; };
 		22B6F4B31B51CD1E006B05DF /* LateNightMix.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = LateNightMix.m4a; sourceTree = "<group>"; };
 		22B6F4C41B51D168006B05DF /* bubblePop3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubblePop3.caf; sourceTree = "<group>"; };
 		22B6F4C61B51D1EA006B05DF /* bubbleSpawn3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubbleSpawn3.caf; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				2244F2071B4D5F90006ADC77 /* Utility.m */,
 				220BB0171B4AFBB000C41B10 /* GameScene.h */,
 				220BB0181B4AFBB000C41B10 /* GameScene.m */,
+				229772421B543CA800C305E9 /* PauseNode.h */,
+				229772431B543CA800C305E9 /* PauseNode.m */,
 				229772331B52989D00C305E9 /* HudNode.h */,
 				229772341B52989D00C305E9 /* HudNode.m */,
 				2244F2091B4D6250006ADC77 /* MyParticle.sks */,
@@ -329,6 +334,7 @@
 			files = (
 				2281F8791B50FACA005E4D37 /* SideNode.m in Sources */,
 				22238EDE1B5060DB007B035C /* GroundNode.m in Sources */,
+				229772441B543CA800C305E9 /* PauseNode.m in Sources */,
 				220BB01E1B4AFBB000C41B10 /* GameViewController.m in Sources */,
 				220BB0161B4AFBB000C41B10 /* AppDelegate.m in Sources */,
 				229772351B52989D00C305E9 /* HudNode.m in Sources */,

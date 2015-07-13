@@ -14,6 +14,7 @@
 #import "Utility.h"
 #import "HudNode.h"
 #import "THGameOverNode.h"
+#import "PauseNode.h"
 #import <AVFoundation/AVFoundation.h>
 
 
@@ -30,6 +31,7 @@
 @property (nonatomic) AVAudioPlayer *backgroundMusic;
 @property (nonatomic) AVAudioPlayer *gameOverMusic;
 @property (nonatomic) NSInteger score;
+@property (nonatomic) SKLabelNode *pauseLabel;
 @property (nonatomic) BOOL addBubbleToggle;
 @property (nonatomic) BOOL gameOver;
 @property (nonatomic) BOOL restart;
@@ -41,7 +43,7 @@
 @implementation GameScene
 
 -(void)didMoveToView:(SKView *)view {
-    
+
     self.lastUpdateTimeInterval = 0;
     self.timeSinceBubbleAdded = 0;
     self.addBubbleTimeInterval = 1.0;
@@ -147,8 +149,8 @@
     UITouch *touchedNode = [touches anyObject]; // Registers the touch
     CGPoint touchPoint = [touchedNode locationInNode:self]; // (x, y) of where the touch was
     SKNode *node = [self nodeAtPoint:touchPoint]; // Returns the node at touch
-    
-    if ([node.name isEqualToString:@"bubbleNode"] && !self.gameOverDisplayed){
+    //self.scene.view.paused = YES;
+    if ([node.name isEqualToString:@"bubbleNode"] && !self.gameOverDisplayed && !self.scene.view.isPaused) {
         
         [node removeFromParent];
         [self addPoints:100];
@@ -164,6 +166,37 @@
         
     }
     
+    else if ([node.name isEqualToString:@"Ground"] && !self.gameOverDisplayed){
+        
+        if (!self.scene.view.isPaused) {
+            [self performPause];
+            
+            
+            //            self.pauseLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+//            self.pauseLabel.text = @"Paused";
+//            self.pauseLabel.fontSize =60;
+//            self.pauseLabel.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+//////            self.pauseLabel.zPosition = 17;
+////
+////            [self addChild:self.pauseLabel];
+//            self.scene.view.paused = YES;
+//            NSLog(@"was not paused, now: %d", self.scene.view.isPaused);
+        }
+        else if (self.scene.view.isPaused)
+        {
+            for (SKNode *node in [self children]) {
+                if([node.name isEqualToString:@"Pause"]){
+                    self.scene.view.paused = NO;
+                [node removeFromParent];
+                }
+            }
+//            self.scene.view.paused = NO;
+//            NSLog(@"scene was paused, now: %d", self.scene.view.isPaused);
+        }
+        
+        
+    }
+    
     else if ( self.restart ) {
         for (SKNode *node in [self children]) {
             [node removeFromParent];
@@ -174,10 +207,21 @@
     }
     
 }
+-(void)didSimulatePhysics{
 
+
+}
 
 -(void)update:(CFTimeInterval)currentTime {
     NSLog(@"time interval: %f", self.addBubbleTimeInterval);
+    
+//    for (SKNode *node in [self children]) {
+//        if([node.name isEqualToString:@"Bubble"] && (node.physicsBody.velocity.dy>0.5)  && node.physicsBody.categoryBitMask ==CollisionCategoryBubbleTypeB){
+//            BubbleNode *bubble = (BubbleNode *) node;
+//            bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeA;
+//            bubble.colorBlendFactor =0.5;
+//        }
+//    }
     
     if (!self.gameOverDisplayed) {
         HudNode *hud = (HudNode *)[self childNodeWithName:@"HUD"];
@@ -222,6 +266,13 @@
     
     
 }
+- (void) performPause {
+    PauseNode *pause = [PauseNode pauseAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+    [self addChild:pause];
+    self.scene.view.paused = YES;
+
+}
+
 
 - (void) performGameOver {
     THGameOverNode *gameOver = [THGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)) withScore:self.score];
@@ -261,6 +312,7 @@
         [self joinBodies:firstBody secondBody:secondBody jointPoint:contact.contactPoint];
         
         BubbleNode *bubble = (BubbleNode *) firstBody.node;
+        bubble.colorBlendFactor = 0;
         bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeB;
         bubble.physicsBody.collisionBitMask = CollisionCategoryGround | CollisionCategoryBubbleTypeA | CollisionCategorySide | CollisionCategoryBubbleTypeB;
         bubble.physicsBody.contactTestBitMask = CollisionCategoryCeiling;
@@ -289,7 +341,7 @@
     //    float dy = [Utility randomIntegerBetweenAndIncluding:100 maximum:400];
     //  bubble.physicsBody.velocity = CGVectorMake(0, 1000);
     
-    float y = self.frame.size.height + 2*bubble.size.height+100;
+    float y = self.frame.size.height + 2*bubble.size.height+30;
     float x = [Utility randomIntegerBetweenAndIncluding:bubble.size.width+20 maximum:self.frame.size.width-(2*bubble.size.width)];
     
     // bubble.position = CGPointMake(x,y);

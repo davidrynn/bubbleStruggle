@@ -46,10 +46,11 @@
     
 }
 - (void) addTimeInterval:(NSTimeInterval) t {
+    
     NSInteger seconds = (NSInteger)t%60;
-    NSInteger minutes = (NSInteger)t/3600;
+    NSInteger minutes = (NSInteger)t/60;
     SKLabelNode *timeLabel = (SKLabelNode*)[self childNodeWithName:@"Time"];
-    timeLabel.text = [NSString stringWithFormat:@"%ld:%ld",minutes, seconds];
+    timeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld",minutes, seconds];
     
 }
 
