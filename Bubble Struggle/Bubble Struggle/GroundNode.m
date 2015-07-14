@@ -12,7 +12,8 @@
 @implementation GroundNode
 
 + (instancetype) groundWithSize:(CGSize)size {
-    GroundNode *ground = [self spriteNodeWithColor:[SKColor grayColor] size:size];
+    SKTexture *textureForGround = [SKTexture textureWithImageNamed:@"traditional-tile"];
+    GroundNode *ground = [self spriteNodeWithTexture:textureForGround size:size];
     ground.name = @"Ground";
     ground.position = CGPointMake(size.width/2,size.height/2);
     [ground setupPhysicsBody];

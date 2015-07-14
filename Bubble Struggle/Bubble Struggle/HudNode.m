@@ -14,7 +14,23 @@
     hud.position = position;
     hud.zPosition = 10;
     hud.name = @"HUD";
+
     
+    
+
+    
+ 
+    
+    SKLabelNode *scoreShadowLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+    scoreShadowLabel.name = @"ScoreShadow";
+    scoreShadowLabel.text = @"0";
+    scoreShadowLabel.fontColor = [UIColor grayColor];
+    scoreShadowLabel.fontSize = 24;
+    scoreShadowLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
+    scoreShadowLabel.position = CGPointMake(frame.size.width-18, -12);
+    scoreShadowLabel.zPosition =10;
+    
+    [hud addChild:scoreShadowLabel];
     
     SKLabelNode *scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     scoreLabel.name = @"Score";
@@ -22,18 +38,30 @@
     scoreLabel.fontSize = 24;
     scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
     scoreLabel.position = CGPointMake(frame.size.width-20, -10);
-    scoreLabel.zPosition =100;
+    scoreLabel.zPosition =15;
+    
     [hud addChild:scoreLabel];
+    
+    SKLabelNode *timeShadowLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+    timeShadowLabel.name = @"TimeShadow";
+    timeShadowLabel.text = @"0:00";
+    timeShadowLabel.fontColor = [UIColor grayColor];
+    timeShadowLabel.fontSize = 24;
+    timeShadowLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+    timeShadowLabel.position = CGPointMake(22, -12);
+    timeShadowLabel.zPosition =10;
+    [hud addChild:timeShadowLabel];
     
     SKLabelNode *timeLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     timeLabel.name = @"Time";
     timeLabel.text = @"0:00";
+
     timeLabel.fontSize = 24;
+    timeLabel.fontColor = [UIColor whiteColor];
     timeLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
     timeLabel.position = CGPointMake(20, -10);
+    timeLabel.zPosition =15;
     [hud addChild:timeLabel];
-    
-    
     
     return hud;
 }
@@ -43,6 +71,8 @@
     
     SKLabelNode *scoreLabel = (SKLabelNode*)[self childNodeWithName:@"Score"];
     scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
+    SKLabelNode *scoreShadowLabel = (SKLabelNode*)[self childNodeWithName:@"ScoreShadow"];
+    scoreShadowLabel.text = [NSString stringWithFormat:@"%d",self.score];
     
 }
 - (void) addTimeInterval:(NSTimeInterval) t {
@@ -51,6 +81,8 @@
     NSInteger minutes = (NSInteger)t/60;
     SKLabelNode *timeLabel = (SKLabelNode*)[self childNodeWithName:@"Time"];
     timeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld",minutes, seconds];
+    SKLabelNode *timeShadowLabel = (SKLabelNode*)[self childNodeWithName:@"TimeShadow"];
+    timeShadowLabel.text = [NSString stringWithFormat:@"%02ld:%02ld",minutes, seconds];
     
 }
 

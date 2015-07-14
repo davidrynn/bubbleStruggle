@@ -14,7 +14,7 @@
 + (instancetype) ceilingWithSize:(CGSize)size {
     CeilingNode *ceiling = [self spriteNodeWithColor:[SKColor clearColor] size:size];
     ceiling.name = @"Ceiling";
-    ceiling.position = CGPointMake(size.width/2,size.height*1.3);
+    ceiling.position = CGPointMake(size.width/2,size.height*1.45);
     [ceiling setupPhysicsBody];
     
     return ceiling;
