@@ -46,7 +46,7 @@
 
     self.lastUpdateTimeInterval = 0;
     self.timeSinceBubbleAdded = 0;
-    self.addBubbleTimeInterval = 1.0;
+    self.addBubbleTimeInterval = .7;
     self.totalGameTime = 0;
     
     self.size = self.view.frame.size;
@@ -146,6 +146,15 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    if (self.scene.view.isPaused){
+        [self.backgroundMusic play];
+        self.scene.view.paused = NO;
+//        [self enumerateChildNodesWithName:@"Pause" usingBlock:^(SKNode *node, BOOL *stop) {
+//            [self removeFromParent];
+//        }];
+        
+    
+    }
     UITouch *touchedNode = [touches anyObject]; // Registers the touch
     CGPoint touchPoint = [touchedNode locationInNode:self]; // (x, y) of where the touch was
     SKNode *node = [self nodeAtPoint:touchPoint]; // Returns the node at touch
@@ -161,11 +170,12 @@
         [self addChild:explosion];
         [self runAction:self.popSFX];
         [explosion runAction:[SKAction waitForDuration:2.0] completion:^{
-            [explosion removeFromParent];
+        [explosion removeFromParent];
         }];
         
     }
-    
+    // if ([node.name isEqualToString:@"bubbleNode" && node.physicBody.bodyB
+    // node.physicsbody - _joints = inUse?  = NO;
     else if ([node.name isEqualToString:@"Ground"] && !self.gameOverDisplayed){
         
         if (!self.scene.view.isPaused) {
@@ -182,17 +192,7 @@
 //            self.scene.view.paused = YES;
 //            NSLog(@"was not paused, now: %d", self.scene.view.isPaused);
         }
-        else if (self.scene.view.isPaused)
-        {
-            for (SKNode *node in [self children]) {
-                if([node.name isEqualToString:@"Pause"]){
-                    self.scene.view.paused = NO;
-                [node removeFromParent];
-                }
-            }
-//            self.scene.view.paused = NO;
-//            NSLog(@"scene was paused, now: %d", self.scene.view.isPaused);
-        }
+
         
         
     }
@@ -267,14 +267,15 @@
     
 }
 - (void) performPause {
-    PauseNode *pause = [PauseNode pauseAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
-    [self addChild:pause];
+//    PauseNode *pause = [PauseNode pauseAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+//    [self addChild:pause];
     self.scene.view.paused = YES;
+    [self.backgroundMusic pause];
 
 }
 
 
-- (void) performGameOver {
+- (void) performGameOver: (void (^)(BOOL ))completionBlock; {
     THGameOverNode *gameOver = [THGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)) withScore:self.score];
     [self addChild:gameOver];
     self.restart = YES;
@@ -288,6 +289,8 @@
     [gameOver performAnimation];
     
     [self.backgroundMusic stop];
+
+    completionBlock(YES);
     
     
 }
@@ -324,7 +327,9 @@
     
     if(firstBody.categoryBitMask == CollisionCategoryBubbleTypeB &&
        secondBody.categoryBitMask == CollisionCategoryCeiling){
-        [self performGameOver];
+
+        [self performGameOver: ^void (BOOL success) {}];
+
     }
     
     

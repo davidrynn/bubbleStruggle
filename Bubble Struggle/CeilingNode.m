@@ -12,9 +12,9 @@
 @implementation CeilingNode
 
 + (instancetype) ceilingWithSize:(CGSize)size {
-    CeilingNode *ceiling = [self spriteNodeWithColor:[SKColor whiteColor] size:size];
+    CeilingNode *ceiling = [self spriteNodeWithColor:[SKColor clearColor] size:size];
     ceiling.name = @"Ceiling";
-    ceiling.position = CGPointMake(size.width/2,size.height*1.50);
+    ceiling.position = CGPointMake(size.width/2,size.height*1.3);
     [ceiling setupPhysicsBody];
     
     return ceiling;
@@ -22,7 +22,7 @@
 
 
 - (void) setupPhysicsBody {
-    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
+    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(self.frame.size.width*2, self.frame.size.height)];
     self.physicsBody.affectedByGravity = NO;
     self.physicsBody.dynamic = NO;
     self.physicsBody.categoryBitMask = CollisionCategoryCeiling;
