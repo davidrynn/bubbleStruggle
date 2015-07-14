@@ -46,7 +46,7 @@
 
     self.lastUpdateTimeInterval = 0;
     self.timeSinceBubbleAdded = 0;
-    self.addBubbleTimeInterval = .7;
+    self.addBubbleTimeInterval = .5;
     self.totalGameTime = 0;
     
     self.size = self.view.frame.size;
@@ -276,7 +276,10 @@
 
 
 - (void) performGameOver: (void (^)(BOOL ))completionBlock; {
-    THGameOverNode *gameOver = [THGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)) withScore:self.score];
+    if (!self.gameOverDisplayed) {
+
+    
+    THGameOverNode *gameOver = [THGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)) withScore:self.score * self.totalGameTime/2];
     [self addChild:gameOver];
     self.restart = YES;
     self.gameOver =YES;
@@ -291,7 +294,7 @@
     [self.backgroundMusic stop];
 
     completionBlock(YES);
-    
+    }
     
 }
 

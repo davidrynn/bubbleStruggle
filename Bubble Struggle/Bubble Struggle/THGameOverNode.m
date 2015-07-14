@@ -15,10 +15,18 @@
     SKLabelNode *gameOverLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     gameOverLabel.fontColor =[UIColor blueColor];
     gameOverLabel.name = @"GameOver";
-    gameOverLabel.text = [NSString stringWithFormat:@"Game Over\n\nScore: %ld", score];
+    gameOverLabel.text = @"Game Over";
     gameOverLabel.fontSize = 32;
     gameOverLabel.position = position;
     [gameOver addChild:gameOverLabel];
+    
+    SKLabelNode *gameOverScoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+    gameOverScoreLabel.fontColor =[UIColor blueColor];
+    gameOverScoreLabel.name = @"GameOver";
+    gameOverScoreLabel.text = [NSString stringWithFormat:@"Final Score: %ld", score];
+    gameOverScoreLabel.fontSize = 22;
+    gameOverScoreLabel.position = CGPointMake(position.x, position.y -80);
+    [gameOver addChild:gameOverScoreLabel];
     
     return gameOver;
 }

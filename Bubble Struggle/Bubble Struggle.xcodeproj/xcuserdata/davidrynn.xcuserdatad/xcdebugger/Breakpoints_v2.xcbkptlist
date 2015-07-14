@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bubble Struggle/GameScene.m"
-            timestampString = "458575724.306203"
+            timestampString = "458582260.602563"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "331"
-            endingLineNumber = "331"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
             landmarkName = "-didBeginContact:"
             landmarkType = "5">
          </BreakpointContent>
