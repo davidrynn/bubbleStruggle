@@ -142,6 +142,12 @@
     
     SKPhysicsJointFixed *joint = [SKPhysicsJointFixed jointWithBodyA:bodyA bodyB:bodyB anchor:point];
     [self.physicsWorld addJoint:joint];
+    if(bodyA.categoryBitMask == CollisionCategoryBubbleTypeB &&
+       bodyB.categoryBitMask == CollisionCategoryCeiling){
+        NSLog(@"Hit Ceiling");
+        [self performGameOver: ^void (BOOL success) {}];
+        
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -213,7 +219,7 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    NSLog(@"time interval: %f", self.addBubbleTimeInterval);
+//    NSLog(@"time interval: %f", self.addBubbleTimeInterval);
     
 //    for (SKNode *node in [self children]) {
 //        if([node.name isEqualToString:@"Bubble"] && (node.physicsBody.velocity.dy>0.5)  && node.physicsBody.categoryBitMask ==CollisionCategoryBubbleTypeB){
@@ -322,6 +328,7 @@
         bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeB;
         bubble.physicsBody.collisionBitMask = CollisionCategoryGround | CollisionCategoryBubbleTypeA | CollisionCategorySide | CollisionCategoryBubbleTypeB;
         bubble.physicsBody.contactTestBitMask = CollisionCategoryCeiling;
+
     }
     
     if (firstBody.categoryBitMask == CollisionCategoryBubbleTypeA &&
@@ -330,7 +337,7 @@
     
     if(firstBody.categoryBitMask == CollisionCategoryBubbleTypeB &&
        secondBody.categoryBitMask == CollisionCategoryCeiling){
-
+        NSLog(@"Hit Ceiling");
         [self performGameOver: ^void (BOOL success) {}];
 
     }
