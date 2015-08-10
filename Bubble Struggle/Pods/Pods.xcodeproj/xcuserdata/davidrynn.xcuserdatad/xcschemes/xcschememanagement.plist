@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Bubble Struggle-FLKAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Bubble Struggle-Fingertips.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Bubble Struggle-ORStackView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Bubble Struggle-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Bubble Struggle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>035A2792C023A84B148166CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F4E4F84CF122A937E142838</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>411CA9E19BCB912BB0C74BC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEE168C0BD199175A31BA518</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9141F0FA6C2F4E18A9D7236</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+framework module FLKAutoLayout {
+  umbrella header "Pods-Bubble Struggle-FLKAutoLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

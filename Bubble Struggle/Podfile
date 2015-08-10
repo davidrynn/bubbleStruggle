@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'Bubble Struggle' do
+    platform :ios, '8.0'
+    use_frameworks!
+    
+#
+#        pod 'Fingertips', '~> 0.4.0'
+#        pod 'ORStackView', '~> 2.0'
+#        pod 'SwiftyJSON', '~> 2.1'
+
+end
+
+target 'Bubble StruggleTests' do
+
+end
+

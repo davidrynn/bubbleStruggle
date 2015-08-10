@@ -1,0 +1,1078 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0053B4CF7715EEE47B7886C7 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB787334683927A1C33494 /* NSLayoutConstraint+FLKAutoLayoutDebug.m */; };
+		0983483E40C66D963DB5D176 /* ORSplitStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC7C844AE4A0DF48942FD1C /* ORSplitStackView.m */; };
+		133720D164DBE4FD0F43D8E0 /* NSLayoutConstraint+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 82628FC76C1B808D8413D252 /* NSLayoutConstraint+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1717DE641E3E8F0FF18EA4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021AB46283219725E79562FD /* Foundation.framework */; };
+		20043BBA2E13F70BE90E8FC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021AB46283219725E79562FD /* Foundation.framework */; };
+		242705417B47A1BF6475CCF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021AB46283219725E79562FD /* Foundation.framework */; };
+		35B997439CA66E68315BA3B5 /* MBFingerTipWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BFB6B8250C634A1E0F2DA7 /* MBFingerTipWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FD33D8A4BC6A1D2F37FC6B /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC79F625787F3E89049361 /* UIView+FLKAutoLayoutDebug.m */; };
+		447C33569621E7E2EEEC8673 /* ORStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBF8E332B2AD4808045BC2F /* ORStackView.m */; };
+		4A46294880E8141ECE7C87F4 /* ORSplitStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F13DD0382988D5958DA9D5 /* ORSplitStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DCDE6D0D3D8F55AA4BE3892 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F855F8A4C3CD380400C51 /* SwiftyJSON.swift */; };
+		4E43EE077BCADF3A540CEDD0 /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B90F73B32C47E0F670073A8B /* UIView+FLKAutoLayout.m */; };
+		53DD6BAB72EE05B51E890EB3 /* Pods-Bubble Struggle-ORStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ACB64E472C5AE3427D929B /* Pods-Bubble Struggle-ORStackView-dummy.m */; };
+		55362AB4822CC5AEC5C6BFDB /* ORTagBasedAutoStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B44CAE9D8248060705246 /* ORTagBasedAutoStackView.m */; };
+		5F8351B097E406F4D260833A /* ORStackScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACC76A578849AFCE8EBCC35 /* ORStackScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6157BAAA709BEF5DC39E3D4F /* ORStackView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF331EF02D40D3277D59A47 /* ORStackView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		639ECDC438EEE2E16CA0298D /* FLKAutoLayoutPredicateList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DD3C3D03D7064866C1510 /* FLKAutoLayoutPredicateList.m */; };
+		731FDC920FAEC93A56C0C8D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA14713F6801CA359369A01 /* UIKit.framework */; };
+		74AF0A291374F50DB0BE06CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021AB46283219725E79562FD /* Foundation.framework */; };
+		8BC613790B906492EFDC68FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021AB46283219725E79562FD /* Foundation.framework */; };
+		8C4ED756BCDBA9D451644517 /* ORTagBasedAutoStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 917788B05AF5FD1ED5525DD7 /* ORTagBasedAutoStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938A5AD79752B8EEFC485724 /* ORStackView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5B85A2F0C2847B8A8A82A /* ORStackView+Private.m */; };
+		9CBBD67A1ED304498A7BA706 /* ORStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB4CF8E4CD4D3E27A16EA3E /* ORStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DF19FCB04F615001498CBB8 /* Pods-Bubble Struggle-ORStackView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE2BBCB3F00820435F589FF /* Pods-Bubble Struggle-ORStackView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A22007DE553EEE24F686D02A /* FLKAutoLayoutPredicateList.h in Headers */ = {isa = PBXBuildFile; fileRef = A96708BCDE6E76BC17764607 /* FLKAutoLayoutPredicateList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A486D1C5725ACB6D7500CF86 /* Pods-Bubble Struggle-FLKAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49A74AB386095776781DA4 /* Pods-Bubble Struggle-FLKAutoLayout-dummy.m */; };
+		A6A51917EF4DC3BF30792B5B /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7A2E54AD72601495ACD1C /* UIView+FLKAutoLayoutPredicate.m */; };
+		ABCCAD08A9FA168C2897EF7E /* UIView+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BF265A2598216E88701C10 /* UIView+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1D931823DAD73DADCB69742 /* Pods-Bubble Struggle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A468FBE2FA07BF3E346A3C23 /* Pods-Bubble Struggle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4710C5EA8824B23CA211678 /* UIView+FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A870776B2CD49ABABDB3D30 /* UIView+FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B552C8B34CBDB329D1EEF978 /* Pods-Bubble Struggle-FLKAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC9001FF5C8C2B65F5B6B87 /* Pods-Bubble Struggle-FLKAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0733D79A89A4A5EB7CB35DD /* Pods-Bubble Struggle-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6839B6796E637CA872FE4D56 /* Pods-Bubble Struggle-SwiftyJSON-dummy.m */; };
+		C982C9B54DDCC71E07CF1D02 /* UIView+FLKAutoLayoutPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE05B614A8E260028D8C51D /* UIView+FLKAutoLayoutPredicate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA6AD64ABEF45121A263FA23 /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 693CF0AE97566BF012559E16 /* MBFingerTipWindow.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D478C1A545CB91508EAD6DDC /* Pods-Bubble Struggle-Fingertips-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3DF22B42562586DE26BAD4 /* Pods-Bubble Struggle-Fingertips-dummy.m */; };
+		D4AA7509DB8643171CDD8023 /* ORStackScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E14D583463470C37BB3F1233 /* ORStackScrollView.m */; };
+		D574E349FF0751D28A21EE99 /* Pods-Bubble Struggle-Fingertips-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D791C37C21F6057B6A71EC6 /* Pods-Bubble Struggle-Fingertips-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E228CE2FAFD49A5E459300A5 /* Pods-Bubble Struggle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B616CB387B607D4F69194A0A /* Pods-Bubble Struggle-dummy.m */; };
+		F053B380A1AD86B365B4ACDC /* FLKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91686667CEA31748C59AC6AD /* FLKAutoLayout.framework */; };
+		F5C5CFBBFA8A1E4BED40AE6A /* Pods-Bubble Struggle-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 846593131B2F84CF6EC1FBE2 /* Pods-Bubble Struggle-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33A862E011B9ADBFFF3C0BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C51FD022BF9E3C255961514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE168C0BD199175A31BA518;
+			remoteInfo = "Pods-Bubble Struggle-SwiftyJSON";
+		};
+		4D0BB2E7C26C65E077D77F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C51FD022BF9E3C255961514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035A2792C023A84B148166CF;
+			remoteInfo = "Pods-Bubble Struggle-ORStackView";
+		};
+		6E9BD67B83B6E021D7A38F8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C51FD022BF9E3C255961514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9141F0FA6C2F4E18A9D7236;
+			remoteInfo = "Pods-Bubble Struggle-Fingertips";
+		};
+		72EBB38751E52A312437A667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C51FD022BF9E3C255961514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411CA9E19BCB912BB0C74BC5;
+			remoteInfo = "Pods-Bubble Struggle-FLKAutoLayout";
+		};
+		D95D9943244C5817910738D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C51FD022BF9E3C255961514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411CA9E19BCB912BB0C74BC5;
+			remoteInfo = "Pods-Bubble Struggle-FLKAutoLayout";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BA2388A17BD9D503A9E9F7 /* Pods-Bubble Struggle-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-environment.h"; sourceTree = "<group>"; };
+		021AB46283219725E79562FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		070BF774F23B69BD75691A31 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACC76A578849AFCE8EBCC35 /* ORStackScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORStackScrollView.h; path = Classes/ios/ORStackScrollView.h; sourceTree = "<group>"; };
+		0FF331EF02D40D3277D59A47 /* ORStackView+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ORStackView+Private.h"; path = "Classes/ios/private/ORStackView+Private.h"; sourceTree = "<group>"; };
+		158E44A1F0B3CA0ACB4D1520 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A870776B2CD49ABABDB3D30 /* UIView+FLKAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FLKAutoLayout.h"; path = "FLKAutoLayout/UIView+FLKAutoLayout.h"; sourceTree = "<group>"; };
+		1B7D5757AA1E78DE9876015B /* Pods-Bubble Struggle-Fingertips.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-Fingertips.xcconfig"; sourceTree = "<group>"; };
+		2159F2113BFFCCBCC109CF0B /* Pods-Bubble Struggle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Struggle-frameworks.sh"; sourceTree = "<group>"; };
+		2EC7A2E54AD72601495ACD1C /* UIView+FLKAutoLayoutPredicate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FLKAutoLayoutPredicate.m"; path = "FLKAutoLayout/UIView+FLKAutoLayoutPredicate.m"; sourceTree = "<group>"; };
+		2EE2BBCB3F00820435F589FF /* Pods-Bubble Struggle-ORStackView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-ORStackView-umbrella.h"; sourceTree = "<group>"; };
+		33F6D89DCB70CD66BBD97A98 /* Fingertips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fingertips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4342B793AB9F980F5DAF5A5E /* Pods-Bubble Struggle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA1DF0072CD4F924BB87CA9 /* Pods-Bubble Struggle-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		596AEB1183E054B970FA6B9B /* Pods-Bubble Struggle-FLKAutoLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-FLKAutoLayout-Private.xcconfig"; sourceTree = "<group>"; };
+		5C3B44CAE9D8248060705246 /* ORTagBasedAutoStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORTagBasedAutoStackView.m; path = Classes/ios/ORTagBasedAutoStackView.m; sourceTree = "<group>"; };
+		5EC99DBEA0FF18B194865F58 /* Pods-Bubble Struggle-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		5F0EBBA0B5488B498468DFBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F13DD0382988D5958DA9D5 /* ORSplitStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSplitStackView.h; path = Classes/ios/ORSplitStackView.h; sourceTree = "<group>"; };
+		6839B6796E637CA872FE4D56 /* Pods-Bubble Struggle-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Struggle-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		68B187A467506F56ABE6817E /* Pods-Bubble Struggle-Fingertips.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Struggle-Fingertips.modulemap"; sourceTree = "<group>"; };
+		68D2ABD5FE00D3E736887F0A /* Pods-Bubble Struggle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Struggle-resources.sh"; sourceTree = "<group>"; };
+		693CF0AE97566BF012559E16 /* MBFingerTipWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBFingerTipWindow.m; sourceTree = "<group>"; };
+		6AD9A3D9CE5F3D463A43DBEE /* ORStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ORStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3DF22B42562586DE26BAD4 /* Pods-Bubble Struggle-Fingertips-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Struggle-Fingertips-dummy.m"; sourceTree = "<group>"; };
+		73243AC8CB1B0771C0E7F085 /* Pods-Bubble Struggle-ORStackView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-ORStackView-Private.xcconfig"; sourceTree = "<group>"; };
+		74CCAB3216B9550A8E7F62D3 /* Pods-Bubble Struggle-ORStackView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-ORStackView-prefix.pch"; sourceTree = "<group>"; };
+		7731C16C450F77509B118F7D /* Pods-Bubble Struggle-Fingertips-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-Fingertips-prefix.pch"; sourceTree = "<group>"; };
+		78ACB64E472C5AE3427D929B /* Pods-Bubble Struggle-ORStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Struggle-ORStackView-dummy.m"; sourceTree = "<group>"; };
+		7B49A74AB386095776781DA4 /* Pods-Bubble Struggle-FLKAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Struggle-FLKAutoLayout-dummy.m"; sourceTree = "<group>"; };
+		7D791C37C21F6057B6A71EC6 /* Pods-Bubble Struggle-Fingertips-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-Fingertips-umbrella.h"; sourceTree = "<group>"; };
+		810FBA51BE64A10A9F9D908E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82628FC76C1B808D8413D252 /* NSLayoutConstraint+FLKAutoLayoutDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+FLKAutoLayoutDebug.h"; path = "FLKAutoLayout/NSLayoutConstraint+FLKAutoLayoutDebug.h"; sourceTree = "<group>"; };
+		846593131B2F84CF6EC1FBE2 /* Pods-Bubble Struggle-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		88BF265A2598216E88701C10 /* UIView+FLKAutoLayoutDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FLKAutoLayoutDebug.h"; path = "FLKAutoLayout/UIView+FLKAutoLayoutDebug.h"; sourceTree = "<group>"; };
+		8CAC79F625787F3E89049361 /* UIView+FLKAutoLayoutDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FLKAutoLayoutDebug.m"; path = "FLKAutoLayout/UIView+FLKAutoLayoutDebug.m"; sourceTree = "<group>"; };
+		8CF5B85A2F0C2847B8A8A82A /* ORStackView+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ORStackView+Private.m"; path = "Classes/ios/private/ORStackView+Private.m"; sourceTree = "<group>"; };
+		91686667CEA31748C59AC6AD /* FLKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		917788B05AF5FD1ED5525DD7 /* ORTagBasedAutoStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORTagBasedAutoStackView.h; path = Classes/ios/ORTagBasedAutoStackView.h; sourceTree = "<group>"; };
+		9C6DDB1A9CBD2E249276FBE5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBF8E332B2AD4808045BC2F /* ORStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORStackView.m; path = Classes/ios/ORStackView.m; sourceTree = "<group>"; };
+		A0E51948D31FCA8623F6B687 /* Pods-Bubble Struggle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bubble Struggle-acknowledgements.plist"; sourceTree = "<group>"; };
+		A319C7825D3153F6601B78DB /* Pods-Bubble Struggle-FLKAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-FLKAutoLayout.xcconfig"; sourceTree = "<group>"; };
+		A468FBE2FA07BF3E346A3C23 /* Pods-Bubble Struggle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-umbrella.h"; sourceTree = "<group>"; };
+		A697539F85825B1DEB10E359 /* Pods-Bubble Struggle-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Struggle-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		A96708BCDE6E76BC17764607 /* FLKAutoLayoutPredicateList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLKAutoLayoutPredicateList.h; path = FLKAutoLayout/FLKAutoLayoutPredicateList.h; sourceTree = "<group>"; };
+		B04C2CF15E4A6C014F738909 /* Pods-Bubble Struggle-FLKAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Struggle-FLKAutoLayout.modulemap"; sourceTree = "<group>"; };
+		B3BFB6B8250C634A1E0F2DA7 /* MBFingerTipWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBFingerTipWindow.h; sourceTree = "<group>"; };
+		B616CB387B607D4F69194A0A /* Pods-Bubble Struggle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Struggle-dummy.m"; sourceTree = "<group>"; };
+		B830E67CC13D414317369375 /* Pods-Bubble Struggle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle.release.xcconfig"; sourceTree = "<group>"; };
+		B90F73B32C47E0F670073A8B /* UIView+FLKAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FLKAutoLayout.m"; path = "FLKAutoLayout/UIView+FLKAutoLayout.m"; sourceTree = "<group>"; };
+		BA4DD3C3D03D7064866C1510 /* FLKAutoLayoutPredicateList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLKAutoLayoutPredicateList.m; path = FLKAutoLayout/FLKAutoLayoutPredicateList.m; sourceTree = "<group>"; };
+		BFB4CF8E4CD4D3E27A16EA3E /* ORStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORStackView.h; path = Classes/ios/ORStackView.h; sourceTree = "<group>"; };
+		BFE05B614A8E260028D8C51D /* UIView+FLKAutoLayoutPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FLKAutoLayoutPredicate.h"; path = "FLKAutoLayout/UIView+FLKAutoLayoutPredicate.h"; sourceTree = "<group>"; };
+		C2105A6E3E1649F363BB11A7 /* Pods-Bubble Struggle-ORStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-ORStackView.xcconfig"; sourceTree = "<group>"; };
+		CEA14713F6801CA359369A01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D03DBDFA4A6DC03763C3CC71 /* FLKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29F855F8A4C3CD380400C51 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		DAC7C844AE4A0DF48942FD1C /* ORSplitStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSplitStackView.m; path = Classes/ios/ORSplitStackView.m; sourceTree = "<group>"; };
+		DF8B259DD5B4C9CB44F360E4 /* Pods-Bubble Struggle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bubble Struggle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFC9001FF5C8C2B65F5B6B87 /* Pods-Bubble Struggle-FLKAutoLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-FLKAutoLayout-umbrella.h"; sourceTree = "<group>"; };
+		E14D583463470C37BB3F1233 /* ORStackScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORStackScrollView.m; path = Classes/ios/ORStackScrollView.m; sourceTree = "<group>"; };
+		E603B5DE61898DE71DEA2468 /* Pods-Bubble Struggle-FLKAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Struggle-FLKAutoLayout-prefix.pch"; sourceTree = "<group>"; };
+		E641171C05AF04D6869B802E /* Pods-Bubble Struggle-Fingertips-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-Fingertips-Private.xcconfig"; sourceTree = "<group>"; };
+		E8A2B591F8D4089D2F83016D /* Pods_Bubble_Struggle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubble_Struggle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB787334683927A1C33494 /* NSLayoutConstraint+FLKAutoLayoutDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+FLKAutoLayoutDebug.m"; path = "FLKAutoLayout/NSLayoutConstraint+FLKAutoLayoutDebug.m"; sourceTree = "<group>"; };
+		F24662A9CECBAE6C02B234D1 /* Pods-Bubble Struggle-ORStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Struggle-ORStackView.modulemap"; sourceTree = "<group>"; };
+		F44EC4B406C82E63E6E57678 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F4DC2F6ABDDCB34CEAB9CB9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F876190CCBF8B581F63A9FB5 /* Pods-Bubble Struggle-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Struggle-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		FD8F873E0610D2D24047383D /* Pods-Bubble Struggle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Struggle.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33299DBCF2BDC85D19E03B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F053B380A1AD86B365B4ACDC /* FLKAutoLayout.framework in Frameworks */,
+				74AF0A291374F50DB0BE06CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EA8FACC952B5A5509C3ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20043BBA2E13F70BE90E8FC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6996E22D0113DBD23ACF5E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC613790B906492EFDC68FE /* Foundation.framework in Frameworks */,
+				731FDC920FAEC93A56C0C8D8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F8A3C5C3977CC3019B0DC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242705417B47A1BF6475CCF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D3BBF004445C3F031A2912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1717DE641E3E8F0FF18EA4DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E14BF6F90879CEB75575BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91686667CEA31748C59AC6AD /* FLKAutoLayout.framework */,
+				38B424FBE85668ECB37D5E2D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2951F1D19DCB327273E65A3E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				070BF774F23B69BD75691A31 /* Info.plist */,
+				B04C2CF15E4A6C014F738909 /* Pods-Bubble Struggle-FLKAutoLayout.modulemap */,
+				A319C7825D3153F6601B78DB /* Pods-Bubble Struggle-FLKAutoLayout.xcconfig */,
+				596AEB1183E054B970FA6B9B /* Pods-Bubble Struggle-FLKAutoLayout-Private.xcconfig */,
+				7B49A74AB386095776781DA4 /* Pods-Bubble Struggle-FLKAutoLayout-dummy.m */,
+				E603B5DE61898DE71DEA2468 /* Pods-Bubble Struggle-FLKAutoLayout-prefix.pch */,
+				DFC9001FF5C8C2B65F5B6B87 /* Pods-Bubble Struggle-FLKAutoLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Bubble Struggle-FLKAutoLayout";
+			sourceTree = "<group>";
+		};
+		29B18FFDCDF556742D2EE583 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				810FBA51BE64A10A9F9D908E /* Info.plist */,
+				68B187A467506F56ABE6817E /* Pods-Bubble Struggle-Fingertips.modulemap */,
+				1B7D5757AA1E78DE9876015B /* Pods-Bubble Struggle-Fingertips.xcconfig */,
+				E641171C05AF04D6869B802E /* Pods-Bubble Struggle-Fingertips-Private.xcconfig */,
+				6F3DF22B42562586DE26BAD4 /* Pods-Bubble Struggle-Fingertips-dummy.m */,
+				7731C16C450F77509B118F7D /* Pods-Bubble Struggle-Fingertips-prefix.pch */,
+				7D791C37C21F6057B6A71EC6 /* Pods-Bubble Struggle-Fingertips-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Bubble Struggle-Fingertips";
+			sourceTree = "<group>";
+		};
+		38B424FBE85668ECB37D5E2D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				021AB46283219725E79562FD /* Foundation.framework */,
+				CEA14713F6801CA359369A01 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5CCEC892C36D3A418CA818E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7363C8632D836DF7E08EC87D /* FLKAutoLayout */,
+				6737A9ABE94084E6B3202CE2 /* Fingertips */,
+				69A696C04D6C4E3D6FE1A38B /* ORStackView */,
+				6B663765C847EDC7393C002B /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6737A9ABE94084E6B3202CE2 /* Fingertips */ = {
+			isa = PBXGroup;
+			children = (
+				B3BFB6B8250C634A1E0F2DA7 /* MBFingerTipWindow.h */,
+				693CF0AE97566BF012559E16 /* MBFingerTipWindow.m */,
+				29B18FFDCDF556742D2EE583 /* Support Files */,
+			);
+			path = Fingertips;
+			sourceTree = "<group>";
+		};
+		69A696C04D6C4E3D6FE1A38B /* ORStackView */ = {
+			isa = PBXGroup;
+			children = (
+				63F13DD0382988D5958DA9D5 /* ORSplitStackView.h */,
+				DAC7C844AE4A0DF48942FD1C /* ORSplitStackView.m */,
+				0ACC76A578849AFCE8EBCC35 /* ORStackScrollView.h */,
+				E14D583463470C37BB3F1233 /* ORStackScrollView.m */,
+				BFB4CF8E4CD4D3E27A16EA3E /* ORStackView.h */,
+				9DBF8E332B2AD4808045BC2F /* ORStackView.m */,
+				0FF331EF02D40D3277D59A47 /* ORStackView+Private.h */,
+				8CF5B85A2F0C2847B8A8A82A /* ORStackView+Private.m */,
+				917788B05AF5FD1ED5525DD7 /* ORTagBasedAutoStackView.h */,
+				5C3B44CAE9D8248060705246 /* ORTagBasedAutoStackView.m */,
+				6B55B8F7505F71EA28C0E646 /* Support Files */,
+			);
+			path = ORStackView;
+			sourceTree = "<group>";
+		};
+		6B55B8F7505F71EA28C0E646 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				158E44A1F0B3CA0ACB4D1520 /* Info.plist */,
+				F24662A9CECBAE6C02B234D1 /* Pods-Bubble Struggle-ORStackView.modulemap */,
+				C2105A6E3E1649F363BB11A7 /* Pods-Bubble Struggle-ORStackView.xcconfig */,
+				73243AC8CB1B0771C0E7F085 /* Pods-Bubble Struggle-ORStackView-Private.xcconfig */,
+				78ACB64E472C5AE3427D929B /* Pods-Bubble Struggle-ORStackView-dummy.m */,
+				74CCAB3216B9550A8E7F62D3 /* Pods-Bubble Struggle-ORStackView-prefix.pch */,
+				2EE2BBCB3F00820435F589FF /* Pods-Bubble Struggle-ORStackView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Bubble Struggle-ORStackView";
+			sourceTree = "<group>";
+		};
+		6B663765C847EDC7393C002B /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D29F855F8A4C3CD380400C51 /* SwiftyJSON.swift */,
+				E33CE30EC430579A4951DD70 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		6EB877E42EA3E6329B7E847A /* Pods-Bubble Struggle */ = {
+			isa = PBXGroup;
+			children = (
+				5F0EBBA0B5488B498468DFBF /* Info.plist */,
+				FD8F873E0610D2D24047383D /* Pods-Bubble Struggle.modulemap */,
+				DF8B259DD5B4C9CB44F360E4 /* Pods-Bubble Struggle-acknowledgements.markdown */,
+				A0E51948D31FCA8623F6B687 /* Pods-Bubble Struggle-acknowledgements.plist */,
+				B616CB387B607D4F69194A0A /* Pods-Bubble Struggle-dummy.m */,
+				01BA2388A17BD9D503A9E9F7 /* Pods-Bubble Struggle-environment.h */,
+				2159F2113BFFCCBCC109CF0B /* Pods-Bubble Struggle-frameworks.sh */,
+				68D2ABD5FE00D3E736887F0A /* Pods-Bubble Struggle-resources.sh */,
+				A468FBE2FA07BF3E346A3C23 /* Pods-Bubble Struggle-umbrella.h */,
+				4342B793AB9F980F5DAF5A5E /* Pods-Bubble Struggle.debug.xcconfig */,
+				B830E67CC13D414317369375 /* Pods-Bubble Struggle.release.xcconfig */,
+			);
+			name = "Pods-Bubble Struggle";
+			path = "Target Support Files/Pods-Bubble Struggle";
+			sourceTree = "<group>";
+		};
+		7363C8632D836DF7E08EC87D /* FLKAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A96708BCDE6E76BC17764607 /* FLKAutoLayoutPredicateList.h */,
+				BA4DD3C3D03D7064866C1510 /* FLKAutoLayoutPredicateList.m */,
+				82628FC76C1B808D8413D252 /* NSLayoutConstraint+FLKAutoLayoutDebug.h */,
+				EBBB787334683927A1C33494 /* NSLayoutConstraint+FLKAutoLayoutDebug.m */,
+				1A870776B2CD49ABABDB3D30 /* UIView+FLKAutoLayout.h */,
+				B90F73B32C47E0F670073A8B /* UIView+FLKAutoLayout.m */,
+				88BF265A2598216E88701C10 /* UIView+FLKAutoLayoutDebug.h */,
+				8CAC79F625787F3E89049361 /* UIView+FLKAutoLayoutDebug.m */,
+				BFE05B614A8E260028D8C51D /* UIView+FLKAutoLayoutPredicate.h */,
+				2EC7A2E54AD72601495ACD1C /* UIView+FLKAutoLayoutPredicate.m */,
+				2951F1D19DCB327273E65A3E /* Support Files */,
+			);
+			path = FLKAutoLayout;
+			sourceTree = "<group>";
+		};
+		8C6559098E020453963E854D = {
+			isa = PBXGroup;
+			children = (
+				F44EC4B406C82E63E6E57678 /* Podfile */,
+				1E14BF6F90879CEB75575BCC /* Frameworks */,
+				5CCEC892C36D3A418CA818E7 /* Pods */,
+				FE29F68A5F8DACDC9586F38B /* Products */,
+				AA4E6D90875170443106BCCF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AA4E6D90875170443106BCCF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EB877E42EA3E6329B7E847A /* Pods-Bubble Struggle */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E33CE30EC430579A4951DD70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC2F6ABDDCB34CEAB9CB9F /* Info.plist */,
+				A697539F85825B1DEB10E359 /* Pods-Bubble Struggle-SwiftyJSON.modulemap */,
+				F876190CCBF8B581F63A9FB5 /* Pods-Bubble Struggle-SwiftyJSON.xcconfig */,
+				5EC99DBEA0FF18B194865F58 /* Pods-Bubble Struggle-SwiftyJSON-Private.xcconfig */,
+				6839B6796E637CA872FE4D56 /* Pods-Bubble Struggle-SwiftyJSON-dummy.m */,
+				4AA1DF0072CD4F924BB87CA9 /* Pods-Bubble Struggle-SwiftyJSON-prefix.pch */,
+				846593131B2F84CF6EC1FBE2 /* Pods-Bubble Struggle-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Bubble Struggle-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		FE29F68A5F8DACDC9586F38B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D03DBDFA4A6DC03763C3CC71 /* FLKAutoLayout.framework */,
+				33F6D89DCB70CD66BBD97A98 /* Fingertips.framework */,
+				6AD9A3D9CE5F3D463A43DBEE /* ORStackView.framework */,
+				E8A2B591F8D4089D2F83016D /* Pods_Bubble_Struggle.framework */,
+				9C6DDB1A9CBD2E249276FBE5 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F2862E60DA4B26BA5759315 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C5CFBBFA8A1E4BED40AE6A /* Pods-Bubble Struggle-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F84F3387B0062FAEC93094 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22007DE553EEE24F686D02A /* FLKAutoLayoutPredicateList.h in Headers */,
+				133720D164DBE4FD0F43D8E0 /* NSLayoutConstraint+FLKAutoLayoutDebug.h in Headers */,
+				B552C8B34CBDB329D1EEF978 /* Pods-Bubble Struggle-FLKAutoLayout-umbrella.h in Headers */,
+				B4710C5EA8824B23CA211678 /* UIView+FLKAutoLayout.h in Headers */,
+				ABCCAD08A9FA168C2897EF7E /* UIView+FLKAutoLayoutDebug.h in Headers */,
+				C982C9B54DDCC71E07CF1D02 /* UIView+FLKAutoLayoutPredicate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C97D955C035770B65F22F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D931823DAD73DADCB69742 /* Pods-Bubble Struggle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B176B8CF2065374BF3E0B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B997439CA66E68315BA3B5 /* MBFingerTipWindow.h in Headers */,
+				D574E349FF0751D28A21EE99 /* Pods-Bubble Struggle-Fingertips-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B592106B1F54460F9AE012F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A46294880E8141ECE7C87F4 /* ORSplitStackView.h in Headers */,
+				5F8351B097E406F4D260833A /* ORStackScrollView.h in Headers */,
+				6157BAAA709BEF5DC39E3D4F /* ORStackView+Private.h in Headers */,
+				9CBBD67A1ED304498A7BA706 /* ORStackView.h in Headers */,
+				8C4ED756BCDBA9D451644517 /* ORTagBasedAutoStackView.h in Headers */,
+				9DF19FCB04F615001498CBB8 /* Pods-Bubble Struggle-ORStackView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		035A2792C023A84B148166CF /* Pods-Bubble Struggle-ORStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6702876C55A8C78B51CC703B /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-ORStackView" */;
+			buildPhases = (
+				A2D7C545947A9B8CC8DEB7E3 /* Sources */,
+				33299DBCF2BDC85D19E03B5E /* Frameworks */,
+				B592106B1F54460F9AE012F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BFA64840D5AA98F6F324E81 /* PBXTargetDependency */,
+			);
+			name = "Pods-Bubble Struggle-ORStackView";
+			productName = "Pods-Bubble Struggle-ORStackView";
+			productReference = 6AD9A3D9CE5F3D463A43DBEE /* ORStackView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F4E4F84CF122A937E142838 /* Pods-Bubble Struggle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 414BBD0AC23ABB8618F9D2F0 /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle" */;
+			buildPhases = (
+				DD27DC9EA05D1F4D848E6A37 /* Sources */,
+				F0D3BBF004445C3F031A2912 /* Frameworks */,
+				56C97D955C035770B65F22F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540988730D752CCEBE558300 /* PBXTargetDependency */,
+				77F4E67E15B3BBF1ACAEE557 /* PBXTargetDependency */,
+				B2408357A278F4730C4D0417 /* PBXTargetDependency */,
+				BE4C22BF57015217B0EE2BFE /* PBXTargetDependency */,
+			);
+			name = "Pods-Bubble Struggle";
+			productName = "Pods-Bubble Struggle";
+			productReference = E8A2B591F8D4089D2F83016D /* Pods_Bubble_Struggle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		411CA9E19BCB912BB0C74BC5 /* Pods-Bubble Struggle-FLKAutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D930179CA0575C4D4C7DC87E /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-FLKAutoLayout" */;
+			buildPhases = (
+				441FD2493E62EF9A0537CABC /* Sources */,
+				6F8A3C5C3977CC3019B0DC1E /* Frameworks */,
+				46F84F3387B0062FAEC93094 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bubble Struggle-FLKAutoLayout";
+			productName = "Pods-Bubble Struggle-FLKAutoLayout";
+			productReference = D03DBDFA4A6DC03763C3CC71 /* FLKAutoLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEE168C0BD199175A31BA518 /* Pods-Bubble Struggle-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3DB9A7B34F4A483776508E /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-SwiftyJSON" */;
+			buildPhases = (
+				19807C1907D5D4753EDACD23 /* Sources */,
+				33EA8FACC952B5A5509C3ABC /* Frameworks */,
+				2F2862E60DA4B26BA5759315 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bubble Struggle-SwiftyJSON";
+			productName = "Pods-Bubble Struggle-SwiftyJSON";
+			productReference = 9C6DDB1A9CBD2E249276FBE5 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9141F0FA6C2F4E18A9D7236 /* Pods-Bubble Struggle-Fingertips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037F57F3229DBB634ADEAE3A /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-Fingertips" */;
+			buildPhases = (
+				3BF1DF82F3F405D4E1545055 /* Sources */,
+				6996E22D0113DBD23ACF5E98 /* Frameworks */,
+				80B176B8CF2065374BF3E0B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bubble Struggle-Fingertips";
+			productName = "Pods-Bubble Struggle-Fingertips";
+			productReference = 33F6D89DCB70CD66BBD97A98 /* Fingertips.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C51FD022BF9E3C255961514 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = C3D28CBE731533112EEAAD85 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C6559098E020453963E854D;
+			productRefGroup = FE29F68A5F8DACDC9586F38B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F4E4F84CF122A937E142838 /* Pods-Bubble Struggle */,
+				411CA9E19BCB912BB0C74BC5 /* Pods-Bubble Struggle-FLKAutoLayout */,
+				E9141F0FA6C2F4E18A9D7236 /* Pods-Bubble Struggle-Fingertips */,
+				035A2792C023A84B148166CF /* Pods-Bubble Struggle-ORStackView */,
+				CEE168C0BD199175A31BA518 /* Pods-Bubble Struggle-SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19807C1907D5D4753EDACD23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0733D79A89A4A5EB7CB35DD /* Pods-Bubble Struggle-SwiftyJSON-dummy.m in Sources */,
+				4DCDE6D0D3D8F55AA4BE3892 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF1DF82F3F405D4E1545055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD64ABEF45121A263FA23 /* MBFingerTipWindow.m in Sources */,
+				D478C1A545CB91508EAD6DDC /* Pods-Bubble Struggle-Fingertips-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441FD2493E62EF9A0537CABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639ECDC438EEE2E16CA0298D /* FLKAutoLayoutPredicateList.m in Sources */,
+				0053B4CF7715EEE47B7886C7 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */,
+				A486D1C5725ACB6D7500CF86 /* Pods-Bubble Struggle-FLKAutoLayout-dummy.m in Sources */,
+				4E43EE077BCADF3A540CEDD0 /* UIView+FLKAutoLayout.m in Sources */,
+				42FD33D8A4BC6A1D2F37FC6B /* UIView+FLKAutoLayoutDebug.m in Sources */,
+				A6A51917EF4DC3BF30792B5B /* UIView+FLKAutoLayoutPredicate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D7C545947A9B8CC8DEB7E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0983483E40C66D963DB5D176 /* ORSplitStackView.m in Sources */,
+				D4AA7509DB8643171CDD8023 /* ORStackScrollView.m in Sources */,
+				938A5AD79752B8EEFC485724 /* ORStackView+Private.m in Sources */,
+				447C33569621E7E2EEEC8673 /* ORStackView.m in Sources */,
+				55362AB4822CC5AEC5C6BFDB /* ORTagBasedAutoStackView.m in Sources */,
+				53DD6BAB72EE05B51E890EB3 /* Pods-Bubble Struggle-ORStackView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD27DC9EA05D1F4D848E6A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E228CE2FAFD49A5E459300A5 /* Pods-Bubble Struggle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540988730D752CCEBE558300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Bubble Struggle-FLKAutoLayout";
+			target = 411CA9E19BCB912BB0C74BC5 /* Pods-Bubble Struggle-FLKAutoLayout */;
+			targetProxy = 72EBB38751E52A312437A667 /* PBXContainerItemProxy */;
+		};
+		77F4E67E15B3BBF1ACAEE557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Bubble Struggle-Fingertips";
+			target = E9141F0FA6C2F4E18A9D7236 /* Pods-Bubble Struggle-Fingertips */;
+			targetProxy = 6E9BD67B83B6E021D7A38F8A /* PBXContainerItemProxy */;
+		};
+		9BFA64840D5AA98F6F324E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Bubble Struggle-FLKAutoLayout";
+			target = 411CA9E19BCB912BB0C74BC5 /* Pods-Bubble Struggle-FLKAutoLayout */;
+			targetProxy = D95D9943244C5817910738D7 /* PBXContainerItemProxy */;
+		};
+		B2408357A278F4730C4D0417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Bubble Struggle-ORStackView";
+			target = 035A2792C023A84B148166CF /* Pods-Bubble Struggle-ORStackView */;
+			targetProxy = 4D0BB2E7C26C65E077D77F10 /* PBXContainerItemProxy */;
+		};
+		BE4C22BF57015217B0EE2BFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Bubble Struggle-SwiftyJSON";
+			target = CEE168C0BD199175A31BA518 /* Pods-Bubble Struggle-SwiftyJSON */;
+			targetProxy = 33A862E011B9ADBFFF3C0BA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1830A4DB58566CA3DC693EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73243AC8CB1B0771C0E7F085 /* Pods-Bubble Struggle-ORStackView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-ORStackView/Pods-Bubble Struggle-ORStackView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-ORStackView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-ORStackView/Pods-Bubble Struggle-ORStackView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ORStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		392082940E735BB645A64D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		89A735094D72063B2A00F19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596AEB1183E054B970FA6B9B /* Pods-Bubble Struggle-FLKAutoLayout-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-FLKAutoLayout/Pods-Bubble Struggle-FLKAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-FLKAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-FLKAutoLayout/Pods-Bubble Struggle-FLKAutoLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FLKAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D9022F099CE9F8322A4361D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596AEB1183E054B970FA6B9B /* Pods-Bubble Struggle-FLKAutoLayout-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-FLKAutoLayout/Pods-Bubble Struggle-FLKAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-FLKAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-FLKAutoLayout/Pods-Bubble Struggle-FLKAutoLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FLKAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94879A24A28FA0F7D91B841A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1264FFCC5834DF18A3D3A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73243AC8CB1B0771C0E7F085 /* Pods-Bubble Struggle-ORStackView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-ORStackView/Pods-Bubble Struggle-ORStackView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-ORStackView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-ORStackView/Pods-Bubble Struggle-ORStackView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ORStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4C9BA5705C21BC8C212326A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4342B793AB9F980F5DAF5A5E /* Pods-Bubble Struggle.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle/Pods-Bubble Struggle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Bubble_Struggle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D63C2919A56F99E117165967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC99DBEA0FF18B194865F58 /* Pods-Bubble Struggle-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-SwiftyJSON/Pods-Bubble Struggle-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-SwiftyJSON/Pods-Bubble Struggle-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCB3327336A5D932560E63B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B830E67CC13D414317369375 /* Pods-Bubble Struggle.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle/Pods-Bubble Struggle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Bubble_Struggle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E191F2998F11B7341C378E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E641171C05AF04D6869B802E /* Pods-Bubble Struggle-Fingertips-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-Fingertips/Pods-Bubble Struggle-Fingertips-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-Fingertips/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-Fingertips/Pods-Bubble Struggle-Fingertips.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Fingertips;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E66511E7EF9E0047E8FD5895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E641171C05AF04D6869B802E /* Pods-Bubble Struggle-Fingertips-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-Fingertips/Pods-Bubble Struggle-Fingertips-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-Fingertips/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-Fingertips/Pods-Bubble Struggle-Fingertips.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Fingertips;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF9B5E4B20864B247BD146E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC99DBEA0FF18B194865F58 /* Pods-Bubble Struggle-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Bubble Struggle-SwiftyJSON/Pods-Bubble Struggle-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Struggle-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Struggle-SwiftyJSON/Pods-Bubble Struggle-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		037F57F3229DBB634ADEAE3A /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-Fingertips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E191F2998F11B7341C378E58 /* Debug */,
+				E66511E7EF9E0047E8FD5895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		414BBD0AC23ABB8618F9D2F0 /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C9BA5705C21BC8C212326A /* Debug */,
+				DCB3327336A5D932560E63B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6702876C55A8C78B51CC703B /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-ORStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1830A4DB58566CA3DC693EA7 /* Debug */,
+				C1264FFCC5834DF18A3D3A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3DB9A7B34F4A483776508E /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9B5E4B20864B247BD146E7 /* Debug */,
+				D63C2919A56F99E117165967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D28CBE731533112EEAAD85 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392082940E735BB645A64D40 /* Debug */,
+				94879A24A28FA0F7D91B841A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D930179CA0575C4D4C7DC87E /* Build configuration list for PBXNativeTarget "Pods-Bubble Struggle-FLKAutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9022F099CE9F8322A4361D /* Debug */,
+				89A735094D72063B2A00F19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C51FD022BF9E3C255961514 /* Project object */;
+}

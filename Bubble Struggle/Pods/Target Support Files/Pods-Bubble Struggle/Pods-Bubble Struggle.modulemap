@@ -1,0 +1,6 @@
+framework module Pods_Bubble_Struggle {
+  umbrella header "Pods-Bubble Struggle-umbrella.h"
+
+  export *
+  module * { export * }
+}

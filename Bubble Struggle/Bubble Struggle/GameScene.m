@@ -51,7 +51,7 @@
     
     self.size = self.view.frame.size;
     self.physicsWorld.contactDelegate = self;
-    self.physicsWorld.gravity = CGVectorMake(0, -0.1);
+    self.physicsWorld.gravity = CGVectorMake(0, -0.08);
     
     //Setup Nodes
     CGPoint centerScreen = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
@@ -65,9 +65,9 @@
     ground.zPosition = 2;
     [self addChild:ground];
     
-    CeilingNode *ceiling = [CeilingNode ceilingWithSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
-    ceiling.zPosition =15;
-    [self addChild:ceiling];
+//    CeilingNode *ceiling = [CeilingNode ceilingWithSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+//    ceiling.zPosition =15;
+//    [self addChild:ceiling];
     
     
     
@@ -106,7 +106,7 @@
 
 - (void)soundSetup {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"BubbleIntro2" withExtension:@"m4a"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"BubbleIntro2wBass" withExtension:@"m4a"];
     
     self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     self.backgroundMusic.numberOfLoops = -1;
@@ -142,12 +142,7 @@
     
     SKPhysicsJointFixed *joint = [SKPhysicsJointFixed jointWithBodyA:bodyA bodyB:bodyB anchor:point];
     [self.physicsWorld addJoint:joint];
-    if(bodyA.categoryBitMask == CollisionCategoryBubbleTypeB &&
-       bodyB.categoryBitMask == CollisionCategoryCeiling){
-        NSLog(@"Hit Ceiling");
-        [self performGameOver: ^void (BOOL success) {}];
-        
-    }
+
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -168,7 +163,7 @@
     if ([node.name isEqualToString:@"bubbleNode"] && !self.gameOverDisplayed && !self.scene.view.isPaused) {
         
         [node removeFromParent];
-        [self addPoints:100];
+        [self addPoints:1];
         
         NSString *explosionPath = [[NSBundle mainBundle] pathForResource:@"MyParticle" ofType:@"sks"];
         SKEmitterNode *explosion = [NSKeyedUnarchiver unarchiveObjectWithFile:explosionPath];
@@ -228,6 +223,19 @@
 //            bubble.colorBlendFactor =0.5;
 //        }
 //    }
+    
+    
+    
+    //need to enumerate though all nodes and if node height is greater than ceiling ---> game over. 667?
+    [self enumerateChildNodesWithName:@"bubbleNode" usingBlock:^(SKNode *node, BOOL *stop) {
+        if (node.physicsBody.categoryBitMask == CollisionCategoryBubbleTypeB &&  node.position.y>667) {
+            [self performGameOver:^(BOOL success)  {
+                
+            }];
+            
+            NSLog(@"game over through update method");
+        }
+    }];
     
     if (!self.gameOverDisplayed) {
         HudNode *hud = (HudNode *)[self childNodeWithName:@"HUD"];
@@ -307,7 +315,9 @@
 - (void) didBeginContact:(SKPhysicsContact *)contact{
     //    NSLog(@"Contact!!");
     SKPhysicsBody *firstBody, *secondBody;
+    //need to add TypeB join if hits other type B
     
+    //typeB
     if (contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask ) {
         firstBody = contact.bodyA;
         secondBody = contact.bodyB;
@@ -327,22 +337,18 @@
         bubble.colorBlendFactor = 0;
         bubble.physicsBody.categoryBitMask = CollisionCategoryBubbleTypeB;
         bubble.physicsBody.collisionBitMask = CollisionCategoryGround | CollisionCategoryBubbleTypeA | CollisionCategorySide | CollisionCategoryBubbleTypeB;
-        bubble.physicsBody.contactTestBitMask = CollisionCategoryCeiling;
+//        bubble.physicsBody.contactTestBitMask = CollisionCategoryCeiling;
 
     }
     
-    if (firstBody.categoryBitMask == CollisionCategoryBubbleTypeA &&
-        secondBody.categoryBitMask == CollisionCategorySide){
-    };
-    
-    if(firstBody.categoryBitMask == CollisionCategoryBubbleTypeB &&
-       secondBody.categoryBitMask == CollisionCategoryCeiling){
-        NSLog(@"Hit Ceiling");
-        [self performGameOver: ^void (BOOL success) {}];
-
+    if (
+        firstBody.categoryBitMask == CollisionCategoryBubbleTypeB &&
+        ( secondBody.categoryBitMask == CollisionCategoryBubbleTypeB) )
+    {
+        [self joinBodies:firstBody secondBody:secondBody jointPoint:contact.contactPoint];        
     }
     
-    
+
     
 }
 

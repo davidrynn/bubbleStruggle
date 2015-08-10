@@ -23,21 +23,21 @@
     
     SKLabelNode *scoreShadowLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     scoreShadowLabel.name = @"ScoreShadow";
-    scoreShadowLabel.text = @"0";
+    scoreShadowLabel.text = @"Bubbles Popped: 0";
     scoreShadowLabel.fontColor = [UIColor grayColor];
     scoreShadowLabel.fontSize = 24;
-    scoreShadowLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
-    scoreShadowLabel.position = CGPointMake(frame.size.width-18, -12);
+    scoreShadowLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+    scoreShadowLabel.position = CGPointMake(frame.size.width-218, -12);
     scoreShadowLabel.zPosition =10;
     
     [hud addChild:scoreShadowLabel];
     
     SKLabelNode *scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     scoreLabel.name = @"Score";
-    scoreLabel.text = @"0";
+    scoreLabel.text = @"Bubbles Popped: 0";
     scoreLabel.fontSize = 24;
-    scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
-    scoreLabel.position = CGPointMake(frame.size.width-20, -10);
+    scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+    scoreLabel.position = CGPointMake(frame.size.width-220, -10);
     scoreLabel.zPosition =15;
     
     [hud addChild:scoreLabel];
@@ -70,9 +70,9 @@
     self.score += points;
     
     SKLabelNode *scoreLabel = (SKLabelNode*)[self childNodeWithName:@"Score"];
-    scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
+    scoreLabel.text = [NSString stringWithFormat:@"Bubbles Popped:%d",self.score];
     SKLabelNode *scoreShadowLabel = (SKLabelNode*)[self childNodeWithName:@"ScoreShadow"];
-    scoreShadowLabel.text = [NSString stringWithFormat:@"%d",self.score];
+    scoreShadowLabel.text = [NSString stringWithFormat:@"Bubbles Popped:%d",self.score];
     
 }
 - (void) addTimeInterval:(NSTimeInterval) t {

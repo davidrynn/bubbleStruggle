@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0B6A68461959647F202285 /* Pods_Bubble_Struggle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5593394F93851F6A4FEF20C6 /* Pods_Bubble_Struggle.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		220BB0131B4AFBB000C41B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0121B4AFBB000C41B10 /* main.m */; };
 		220BB0161B4AFBB000C41B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0151B4AFBB000C41B10 /* AppDelegate.m */; };
 		220BB0191B4AFBB000C41B10 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 220BB0181B4AFBB000C41B10 /* GameScene.m */; };
@@ -97,6 +98,9 @@
 		22B6F4D31B51F035006B05DF /* tack3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack3.caf; sourceTree = "<group>"; };
 		22B6F4D41B51F035006B05DF /* tack5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack5.caf; sourceTree = "<group>"; };
 		22B6F4D71B51F36C006B05DF /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
+		4397BFC793FB4C8BC1327950 /* Pods-Bubble Struggle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Struggle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Struggle/Pods-Bubble Struggle.release.xcconfig"; sourceTree = "<group>"; };
+		4D7CBDB3BF0104FE84079231 /* Pods-Bubble Struggle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Struggle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Struggle/Pods-Bubble Struggle.debug.xcconfig"; sourceTree = "<group>"; };
+		5593394F93851F6A4FEF20C6 /* Pods_Bubble_Struggle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubble_Struggle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0B6A68461959647F202285 /* Pods_Bubble_Struggle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,12 +122,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1990303FDB56858A6C940C84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D7CBDB3BF0104FE84079231 /* Pods-Bubble Struggle.debug.xcconfig */,
+				4397BFC793FB4C8BC1327950 /* Pods-Bubble Struggle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		220BB0041B4AFBB000C41B10 = {
 			isa = PBXGroup;
 			children = (
 				220BB00F1B4AFBB000C41B10 /* Bubble Struggle */,
 				220BB02E1B4AFBB000C41B10 /* Bubble StruggleTests */,
 				220BB00E1B4AFBB000C41B10 /* Products */,
+				1990303FDB56858A6C940C84 /* Pods */,
+				5BDEC440C0D94C7EF3170827 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +233,14 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		5BDEC440C0D94C7EF3170827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5593394F93851F6A4FEF20C6 /* Pods_Bubble_Struggle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220BB0351B4AFBB000C41B10 /* Build configuration list for PBXNativeTarget "Bubble Struggle" */;
 			buildPhases = (
+				4AE4D2E66EAABA12C90E2EF1 /* Check Pods Manifest.lock */,
 				220BB0091B4AFBB000C41B10 /* Sources */,
 				220BB00A1B4AFBB000C41B10 /* Frameworks */,
 				220BB00B1B4AFBB000C41B10 /* Resources */,
+				3F659FD464189EC193A351CE /* Embed Pods Frameworks */,
+				9E88E4BA10CD23F9AEA63B8C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +353,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F659FD464189EC193A351CE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bubble Struggle/Pods-Bubble Struggle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE4D2E66EAABA12C90E2EF1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E88E4BA10CD23F9AEA63B8C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bubble Struggle/Pods-Bubble Struggle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		220BB0091B4AFBB000C41B10 /* Sources */ = {
@@ -469,6 +544,7 @@
 		};
 		220BB0361B4AFBB000C41B10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7CBDB3BF0104FE84079231 /* Pods-Bubble Struggle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Bubble Struggle/Info.plist";
@@ -479,6 +555,7 @@
 		};
 		220BB0371B4AFBB000C41B10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4397BFC793FB4C8BC1327950 /* Pods-Bubble Struggle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Bubble Struggle/Info.plist";

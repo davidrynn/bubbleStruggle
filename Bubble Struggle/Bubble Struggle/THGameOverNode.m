@@ -23,7 +23,7 @@
     SKLabelNode *gameOverScoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
     gameOverScoreLabel.fontColor =[UIColor blueColor];
     gameOverScoreLabel.name = @"GameOver";
-    gameOverScoreLabel.text = [NSString stringWithFormat:@"Final Score: %ld", score];
+    gameOverScoreLabel.text = [NSString stringWithFormat:@"Final Score (Pops x Time): %ld", score];
     gameOverScoreLabel.fontSize = 22;
     gameOverScoreLabel.position = CGPointMake(position.x, position.y -80);
     [gameOver addChild:gameOverScoreLabel];

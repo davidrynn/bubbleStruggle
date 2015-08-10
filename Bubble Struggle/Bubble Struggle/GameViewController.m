@@ -34,6 +34,9 @@
 {
     [super viewWillLayoutSubviews];
 
+    
+    
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = NO;
